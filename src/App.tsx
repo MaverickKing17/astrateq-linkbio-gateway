@@ -418,12 +418,15 @@ export default function App() {
         </div>
 
         {/* PREMIUM INTERACTIVE ROADSIDE ONBOARDING SEQUENCE (Tesla / Porsche Style Roadmap Setup) */}
-        <div className="bg-white/95 backdrop-blur-md border border-slate-200/70 rounded-3xl p-6 shadow-[0_12px_35px_rgba(0,0,0,0.015)] relative overflow-hidden group">
+        <div className="bg-white/95 backdrop-blur-md border border-slate-200/80 rounded-3xl p-6.5 shadow-[0_16px_40px_rgba(0,0,0,0.015)] relative overflow-hidden group">
+          
+          {/* Subtle modern electric styling overlay */}
+          <div className="absolute top-0 right-0 w-44 h-44 bg-gradient-to-b from-[#0078d4]/5 via-cyan-500/5 to-transparent rounded-full blur-3xl pointer-events-none" />
           
           {/* Top aesthetic subtle accent border */}
-          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#0078d4] via-cyan-400 to-emerald-400" />
+          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#0078d4] via-blue-400 to-cyan-500" />
           
-          <h3 className="text-[10px] font-mono uppercase tracking-[0.25em] text-slate-400 font-bold mb-6 text-center flex items-center justify-center gap-2">
+          <h3 className="text-[10px] font-mono uppercase tracking-[0.25em] text-slate-400 font-bold mb-7 text-center flex items-center justify-center gap-2">
             <span className="relative flex h-2 w-2 shrink-0">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0078d4]"></span>
@@ -433,54 +436,60 @@ export default function App() {
           
           <div className="relative flex flex-col gap-4">
             
-            {/* Minimalist vertical connector timeline line */}
-            <div className="absolute left-[20px] top-4 bottom-4 w-[1px] bg-slate-200/80 z-0" />
+            {/* Elegant active gradient vertical timeline connector */}
+            <div className="absolute left-[20px] top-6 bottom-6 w-[2px] bg-gradient-to-b from-[#0078d4] via-cyan-400 to-slate-200 z-0 rounded-full" />
             
             {/* Onboarding step 1 */}
-            <div className="flex items-start gap-4 relative z-10 group/item">
-              <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-sans font-extrabold text-xs shrink-0 shadow-sm">
+            <div className="flex items-start gap-4.5 relative z-10 group/item">
+              <div className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-mono font-black text-sm shrink-0 shadow-[0_4px_12px_rgba(15,23,42,0.15)] ring-4 ring-slate-100/90 z-20">
                 1
               </div>
-              <div className="flex flex-col bg-slate-50/50 p-3.5 rounded-2xl border border-slate-100 w-full group-hover/item:bg-slate-50 group-hover/item:border-slate-200/60 transition-all duration-300">
-                <span className="text-xs font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
-                  <span>Join Founding Cohort</span>
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#0078d4] animate-pulse" />
-                </span>
-                <span className="text-[11px] text-slate-550 font-semibold leading-relaxed mt-1">
+              <div className="flex flex-col bg-slate-50/60 p-4 rounded-2xl border border-slate-150/70 w-full hover:bg-white hover:shadow-[0_8px_30px_rgba(0,0,0,0.02)] hover:border-slate-200 transition-all duration-300">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-extrabold text-slate-950 tracking-tight">Join Founding Cohort</span>
+                  <span className="relative flex h-1.5 w-1.5 shrink-0">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#0078d4]"></span>
+                  </span>
+                </div>
+                <p className="text-[11px] text-slate-500 font-semibold leading-relaxed mt-1.5">
                   Secure prioritized early access consideration in Canadian validation cohorts.
-                </span>
+                </p>
               </div>
             </div>
 
             {/* Onboarding step 2 */}
-            <div className="flex items-start gap-4 relative z-10 group/item">
-              <div className="w-10 h-10 rounded-full bg-slate-100 text-slate-900 border border-slate-200 flex items-center justify-center font-sans font-extrabold text-xs shrink-0 shadow-sm">
+            <div className="flex items-start gap-4.5 relative z-10 group/item">
+              <div className="w-10 h-10 rounded-full bg-white text-slate-900 border border-slate-200 flex items-center justify-center font-mono font-black text-sm shrink-0 shadow-[0_2px_6px_rgba(0,0,0,0.02)] ring-4 ring-slate-50/90 z-20">
                 2
               </div>
-              <div className="flex flex-col bg-slate-50/50 p-3.5 rounded-2xl border border-slate-100 w-full group-hover/item:bg-slate-50 group-hover/item:border-slate-200/60 transition-all duration-300">
-                <span className="text-xs font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
-                  <span>Verify Platform Fit</span>
-                  <span className="text-[8px] font-bold font-mono text-cyan-600 uppercase bg-cyan-50 px-1.5 py-0.2 rounded border border-cyan-150">Fast</span>
-                </span>
-                <span className="text-[11px] text-slate-550 font-semibold leading-relaxed mt-1">
+              <div className="flex flex-col bg-slate-50/60 p-4 rounded-2xl border border-slate-150/70 w-full hover:bg-white hover:shadow-[0_8px_30px_rgba(0,0,0,0.02)] hover:border-slate-200 transition-all duration-300">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-extrabold text-slate-950 tracking-tight">Verify Platform Fit</span>
+                  <span className="text-[8px] font-bold font-mono text-cyan-600 uppercase bg-cyan-50/70 px-2 py-0.5 rounded border border-cyan-150/60 tracking-wider">Fast Route</span>
+                </div>
+                <p className="text-[11px] text-slate-500 font-semibold leading-relaxed mt-1.5">
                   Submit model details to verify on-device standard compatibility markers.
-                </span>
+                </p>
               </div>
             </div>
 
             {/* Onboarding step 3 */}
-            <div className="flex items-start gap-4 relative z-10 group/item">
-              <div className="w-10 h-10 rounded-full bg-slate-100 text-slate-900 border border-slate-200 flex items-center justify-center font-sans font-extrabold text-xs shrink-0 shadow-sm">
+            <div className="flex items-start gap-4.5 relative z-10 group/item">
+              <div className="w-10 h-10 rounded-full bg-white text-slate-900 border border-slate-200 flex items-center justify-center font-mono font-black text-sm shrink-0 shadow-[0_2px_6px_rgba(0,0,0,0.02)] ring-4 ring-slate-50/90 z-20">
                 3
               </div>
-              <div className="flex flex-col bg-slate-50/50 p-3.5 rounded-2xl border border-slate-100 w-full group-hover/item:bg-slate-50 group-hover/item:border-slate-200/60 transition-all duration-300">
-                <span className="text-xs font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
-                  <span>Monitor Engineering</span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-pulse" />
-                </span>
-                <span className="text-[11px] text-slate-550 font-semibold leading-relaxed mt-1">
+              <div className="flex flex-col bg-slate-50/60 p-4 rounded-2xl border border-slate-150/70 w-full hover:bg-white hover:shadow-[0_8px_30px_rgba(0,0,0,0.02)] hover:border-slate-200 transition-all duration-300">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-extrabold text-slate-950 tracking-tight">Monitor Engineering</span>
+                  <span className="relative flex h-1.5 w-1.5 shrink-0">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+                  </span>
+                </div>
+                <p className="text-[11px] text-slate-500 font-semibold leading-relaxed mt-1.5">
                   Follow local telemetry build updates, hardware casings, and geofencing progress.
-                </span>
+                </p>
               </div>
             </div>
 
@@ -488,38 +497,38 @@ export default function App() {
         </div>
 
         {/* APPLE-GRAD TRUST & PRIVACY MATRIX */}
-        <div className="bg-white/95 backdrop-blur-md border border-slate-200/70 rounded-3xl p-6 relative overflow-hidden shadow-[0_12px_35px_rgba(0,0,0,0.015)]">
-          <div className="absolute top-[-20%] right-[-20%] w-32 h-32 bg-[#0078d4]/5 rounded-full blur-2xl pointer-events-none" />
+        <div className="bg-white/95 backdrop-blur-md border border-slate-200/80 rounded-3xl p-6.5 relative overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.015)]">
+          <div className="absolute top-[-20%] right-[-20%] w-40 h-40 bg-[#0078d4]/5 rounded-full blur-3xl pointer-events-none" />
           
-          <div className="flex items-center gap-3 mb-5 border-b border-slate-100 pb-3">
-            <div className="w-8 h-8 rounded-xl bg-slate-50 text-slate-900 flex items-center justify-center shrink-0 border border-slate-100 shadow-3xs">
-              <Lock className="w-4.5 h-4.5 text-slate-800" />
+          <div className="flex items-center gap-3.5 mb-6 border-b border-slate-100 pb-4">
+            <div className="w-10 h-10 rounded-2xl bg-slate-50 text-slate-900 flex items-center justify-center shrink-0 border border-slate-150/70 shadow-3xs">
+              <Lock className="w-5 h-5 text-slate-800" />
             </div>
             <div>
-              <h3 className="font-sans font-extrabold text-sm text-slate-900 tracking-tight">Privacy by design</h3>
+              <h3 className="font-sans font-extrabold text-sm text-slate-950 tracking-tight">Privacy by design</h3>
               <p className="text-[9px] font-bold font-mono text-[#0078d4] uppercase tracking-wider">Astrateq Premium Protocols</p>
             </div>
           </div>
           
-          <ul className="space-y-4">
+          <div className="space-y-3">
             {[
-              { title: 'On-device intelligence direction', desc: 'Telemetry processed locally without continuous cloud logging' },
-              { title: 'User-controlled data expectations', desc: 'Complete sovereign oversight of vehicle logs and index markers' },
-              { title: 'No unnecessary data sharing', desc: 'Secure local containment ensuring absolute hardware isolation' },
-              { title: 'No advertising-tracker resale', desc: 'Zero commercial profile monetizations, cookies, or broker networks' },
-              { title: 'Built around Canadian driver trust', desc: 'Designed custom tailored and optimized for PIPEDA guidelines' }
+              { title: 'On-device intelligence direction', desc: 'Telemetry processed locally without continuous cloud logging.' },
+              { title: 'User-controlled data expectations', desc: 'Complete sovereign oversight of vehicle logs and index markers.' },
+              { title: 'No unnecessary data sharing', desc: 'Secure local containment ensuring absolute hardware isolation.' },
+              { title: 'No advertising-tracker resale', desc: 'Zero commercial profile monetizations, cookies, or broker networks.' },
+              { title: 'Built around Canadian driver trust', desc: 'Designed custom tailored and optimized for PIPEDA guidelines.' }
             ].map((item, idx) => (
-              <li key={idx} className="flex items-start gap-3 group/bullet">
-                <div className="bg-slate-50 text-slate-800 rounded-full p-0.5 shrink-0 mt-0.5 border border-slate-200 shadow-3xs hover:bg-slate-100 transition-colors">
-                  <Check className="w-3.5 h-3.5 stroke-[3.5]" />
+              <div key={idx} className="p-3.5 bg-slate-50/40 rounded-2xl border border-slate-150/60 flex items-start gap-4 hover:bg-white hover:shadow-[0_8px_25px_rgba(0,0,0,0.015)] hover:border-slate-200 transition-all duration-300">
+                <div className="w-8 h-8 rounded-xl bg-white text-emerald-600 flex items-center justify-center shrink-0 border border-slate-200 shadow-3xs">
+                  <Check className="w-4 h-4 text-[#0078d4] stroke-[3]" />
                 </div>
-                <div className="flex flex-col">
-                  <span className="leading-tight font-extrabold text-slate-900 text-[12.5px] tracking-tight transition-colors duration-200">{item.title}</span>
-                  <span className="text-[10px] text-slate-500 leading-relaxed font-semibold mt-0.5">{item.desc}</span>
+                <div className="flex-1 flex flex-col min-w-0">
+                  <span className="leading-tight font-extrabold text-slate-950 text-xs tracking-tight">{item.title}</span>
+                  <span className="text-[10px] text-slate-500 font-semibold mt-1 leading-normal">{item.desc}</span>
                 </div>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
 
         {/* MICROSOFT-TOUCH HIGH DISCLOSURE PRE-LAUNCH TRANSPARENCY NOTE */}
