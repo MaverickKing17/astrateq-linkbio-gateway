@@ -21,7 +21,8 @@ import {
   X,
   Lock,
   Sparkles,
-  Info
+  Info,
+  BookOpen
 } from 'lucide-react';
 
 // Import sub-components
@@ -30,6 +31,7 @@ import ReadinessWizard from './components/ReadinessWizard';
 import PrivacyDeepDive from './components/PrivacyDeepDive';
 import ExplainerModal from './components/ExplainerModal';
 import UpdatesModal from './components/UpdatesModal';
+import ReadmeModal from './components/ReadmeModal';
 
 // Import generated image
 import astrateqSummerDrive from './assets/images/astrateq_summer_drive_1782065351029.jpg';
@@ -94,6 +96,14 @@ export default function App() {
           <p className="text-[10px] font-semibold font-mono text-slate-400 tracking-[0.2em] uppercase mt-0.5">
             Drive Safer. Drive Smarter.
           </p>
+
+          <button
+            onClick={() => handleOpenModal('readme')}
+            className="mt-1.5 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-50/70 hover:bg-blue-100 border border-blue-200/50 text-[10px] font-sans font-extrabold text-[#0078d4] tracking-wide transition-all duration-300 shadow-3xs cursor-pointer active:scale-95 hover:shadow-2xs"
+          >
+            <BookOpen className="w-3.5 h-3.5" />
+            <span>Interactive System README</span>
+          </button>
         </header>
 
         {/* HERO SECTION (Porsche dynamic layout) */}
@@ -568,6 +578,12 @@ export default function App() {
               <p className="text-[9px] text-slate-400/80 font-semibold font-sans tracking-wide">
                 Engineered for Safe & Private Space awareness.
               </p>
+              <button
+                onClick={() => handleOpenModal('readme')}
+                className="mt-1 text-[10px] text-[#0078d4] hover:text-[#005a9e] font-sans font-extrabold hover:underline cursor-pointer"
+              >
+                View System Specifications & README
+              </button>
             </div>
           </div>
         </footer>
@@ -613,6 +629,7 @@ export default function App() {
                 {activeModal === 'privacy' && <PrivacyDeepDive onClose={handleCloseModal} />}
                 {activeModal === 'explainer' && <ExplainerModal onClose={handleCloseModal} />}
                 {activeModal === 'updates' && <UpdatesModal onClose={handleCloseModal} />}
+                {activeModal === 'readme' && <ReadmeModal onClose={handleCloseModal} />}
               </div>
             </motion.div>
           </>
