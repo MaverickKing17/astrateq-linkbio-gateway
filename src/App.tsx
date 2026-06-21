@@ -78,12 +78,12 @@ export default function App() {
           </div>
 
           {/* Logo Brand Representation - Upgraded Imgur URL with text */}
-          <div className="flex items-center justify-center mb-1 mt-1 animate-fade-in">
+          <div className="flex items-center justify-center mb-2 mt-2 animate-fade-in">
             <img 
               src="https://i.imgur.com/sHJc7d5.png" 
               alt="Astrateq Gadgets Premium Automotive Brand" 
               referrerPolicy="no-referrer"
-              className="h-11 w-auto object-contain drop-shadow-[0_1px_4px_rgba(0,102,204,0.08)]"
+              className="h-20 w-auto object-contain drop-shadow-[0_2px_8px_rgba(0,102,204,0.1)] transition-transform duration-300 hover:scale-105"
             />
           </div>
           
@@ -96,14 +96,6 @@ export default function App() {
           <p className="text-[10px] font-semibold font-mono text-slate-400 tracking-[0.2em] uppercase mt-0.5">
             Drive Safer. Drive Smarter.
           </p>
-
-          <button
-            onClick={() => handleOpenModal('readme')}
-            className="mt-1.5 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-50/70 hover:bg-blue-100 border border-blue-200/50 text-[10px] font-sans font-extrabold text-[#0078d4] tracking-wide transition-all duration-300 shadow-3xs cursor-pointer active:scale-95 hover:shadow-2xs"
-          >
-            <BookOpen className="w-3.5 h-3.5" />
-            <span>Interactive System README</span>
-          </button>
         </header>
 
         {/* HERO SECTION (Porsche dynamic layout) */}
@@ -415,9 +407,7 @@ export default function App() {
             </div>
           </motion.div>
 
-        </div>
-
-        {/* PREMIUM INTERACTIVE ROADSIDE ONBOARDING SEQUENCE (Tesla / Porsche Style Roadmap Setup) */}
+        </div>        {/* PREMIUM INTERACTIVE ROADSIDE ONBOARDING SEQUENCE (Tesla / Porsche Style Roadmap Setup) */}
         <div className="bg-white/95 backdrop-blur-md border border-slate-200/80 rounded-3xl p-6.5 shadow-[0_16px_40px_rgba(0,0,0,0.015)] relative overflow-hidden group">
           
           {/* Subtle modern electric styling overlay */}
@@ -428,31 +418,35 @@ export default function App() {
           
           <h3 className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#0078d4] font-bold mb-7 text-center flex items-center justify-center gap-2">
             <span className="relative flex h-2 w-2 shrink-0">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-450 opacity-75"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0078d4]"></span>
             </span>
             <span>Pre-Launch Onboarding Sequence</span>
           </h3>
           
-          <div className="relative flex flex-col gap-4">
+          <div className="relative flex flex-col gap-5">
             
             {/* Elegant active gradient vertical timeline connector */}
             <div className="absolute left-[20px] top-6 bottom-6 w-[2px] bg-gradient-to-b from-[#0078d4] via-cyan-400 to-emerald-400 z-0 rounded-full" />
             
             {/* Onboarding step 1 */}
             <div className="flex items-start gap-4.5 relative z-10 group/item">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 text-white flex items-center justify-center font-display font-bold text-sm shrink-0 shadow-[0_4px_14px_rgba(0,120,212,0.3)] ring-4 ring-blue-105 z-20">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 text-white flex items-center justify-center font-display font-bold text-sm shrink-0 shadow-[0_4px_14px_rgba(0,120,212,0.35)] ring-4 ring-blue-50/70 z-20 transition-transform duration-300 group-hover/item:scale-110">
                 1
               </div>
-              <div className="flex flex-col bg-gradient-to-br from-blue-700 via-blue-800 to-indigo-900 p-4 rounded-2xl border border-blue-600/40 w-full hover:shadow-[0_10px_30px_rgba(30,58,138,0.22)] transition-all duration-300 transform hover:scale-[1.005] text-white">
-                <div className="flex items-center gap-2">
-                  <span className="text-sm font-display font-bold tracking-tight text-white">Join Founding Cohort</span>
-                  <span className="relative flex h-1.5 w-1.5 shrink-0">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-300 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-cyan-200"></span>
-                  </span>
+              <div className="flex-1 flex flex-col bg-gradient-to-br from-[#0c243c] via-[#004b87] to-[#0078d4] p-4.5 rounded-2xl border border-blue-500/30 shadow-[0_10px_35px_rgba(0,120,212,0.15)] hover:shadow-[0_12px_40px_rgba(0,120,212,0.25)] transition-all duration-300 transform hover:scale-[1.01] text-white relative overflow-hidden">
+                <div className="absolute -top-10 -right-10 w-24 h-24 bg-white/5 rounded-full blur-xl pointer-events-none" />
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-display font-extrabold tracking-tight text-white">Join Founding Cohort</span>
+                    <span className="relative flex h-1.5 w-1.5 shrink-0">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-300 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-cyan-200"></span>
+                    </span>
+                  </div>
+                  <span className="text-[8px] font-bold font-mono tracking-wider bg-white/10 text-white border border-white/20 px-2 py-0.5 rounded-full uppercase">Priority</span>
                 </div>
-                <p className="text-[11px] text-blue-100 font-semibold leading-relaxed mt-1.5 font-sans">
+                <p className="text-[11px] text-blue-100 font-semibold leading-relaxed mt-2 font-sans">
                   Secure prioritized early access consideration in Canadian validation cohorts.
                 </p>
               </div>
@@ -460,15 +454,19 @@ export default function App() {
 
             {/* Onboarding step 2 */}
             <div className="flex items-start gap-4.5 relative z-10 group/item">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-cyan-700 text-white flex items-center justify-center font-display font-bold text-sm shrink-0 shadow-[0_4px_14px_rgba(6,182,212,0.3)] ring-4 ring-cyan-105 z-20">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-cyan-700 text-white flex items-center justify-center font-display font-bold text-sm shrink-0 shadow-[0_4px_14px_rgba(6,182,212,0.35)] ring-4 ring-cyan-50/70 z-20 transition-transform duration-300 group-hover/item:scale-110">
                 2
               </div>
-              <div className="flex flex-col bg-gradient-to-br from-cyan-600 via-cyan-700 to-teal-850 p-4 rounded-2xl border border-cyan-500/40 w-full hover:shadow-[0_10px_30px_rgba(8,145,178,0.22)] transition-all duration-300 transform hover:scale-[1.005] text-white">
-                <div className="flex items-center gap-2">
-                  <span className="text-sm font-display font-bold tracking-tight text-white">Verify Platform Fit</span>
-                  <span className="text-[8px] font-bold font-mono text-white uppercase bg-white/20 px-2 py-0.5 rounded border border-white/25 tracking-wider">Fast Route</span>
+              <div className="flex-1 flex flex-col bg-gradient-to-br from-[#063442] via-[#00637c] to-[#01a2c4] p-4.5 rounded-2xl border border-cyan-500/30 shadow-[0_10px_35px_rgba(6,182,212,0.15)] hover:shadow-[0_12px_40px_rgba(6,182,212,0.25)] transition-all duration-300 transform hover:scale-[1.01] text-white relative overflow-hidden">
+                <div className="absolute -top-10 -right-10 w-24 h-24 bg-white/5 rounded-full blur-xl pointer-events-none" />
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-display font-extrabold tracking-tight text-white">Verify Platform Fit</span>
+                    <span className="text-[8px] font-bold font-mono text-cyan-200 uppercase bg-cyan-900/40 px-2 py-0.5 rounded border border-cyan-400/30 tracking-wider">Fast Route</span>
+                  </div>
+                  <span className="text-[8px] font-bold font-mono tracking-wider bg-white/10 text-white border border-white/20 px-2 py-0.5 rounded-full uppercase">Instant</span>
                 </div>
-                <p className="text-[11px] text-cyan-100 font-semibold leading-relaxed mt-1.5 font-sans">
+                <p className="text-[11px] text-cyan-100 font-semibold leading-relaxed mt-2 font-sans">
                   Submit model details to verify on-device standard compatibility markers.
                 </p>
               </div>
@@ -476,18 +474,22 @@ export default function App() {
 
             {/* Onboarding step 3 */}
             <div className="flex items-start gap-4.5 relative z-10 group/item">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-750 text-white flex items-center justify-center font-display font-bold text-sm shrink-0 shadow-[0_4px_14px_rgba(16,185,129,0.3)] ring-4 ring-emerald-105 z-20">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-750 text-white flex items-center justify-center font-display font-bold text-sm shrink-0 shadow-[0_4px_14px_rgba(16,185,129,0.35)] ring-4 ring-emerald-50/70 z-20 transition-transform duration-300 group-hover/item:scale-110">
                 3
               </div>
-              <div className="flex flex-col bg-gradient-to-br from-emerald-600 via-emerald-700 to-teal-900 p-4 rounded-2xl border border-emerald-500/40 w-full hover:shadow-[0_10px_30px_rgba(5,150,105,0.22)] transition-all duration-300 transform hover:scale-[1.005] text-white">
-                <div className="flex items-center gap-2">
-                  <span className="text-sm font-display font-bold tracking-tight text-white">Monitor Engineering</span>
-                  <span className="relative flex h-1.5 w-1.5 shrink-0">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-200"></span>
-                  </span>
+              <div className="flex-1 flex flex-col bg-gradient-to-br from-[#023c22] via-[#057a44] to-[#10b981] p-4.5 rounded-2xl border border-emerald-500/30 shadow-[0_10px_35px_rgba(16,185,129,0.15)] hover:shadow-[0_12px_40px_rgba(16,185,129,0.25)] transition-all duration-300 transform hover:scale-[1.01] text-white relative overflow-hidden">
+                <div className="absolute -top-10 -right-10 w-24 h-24 bg-white/5 rounded-full blur-xl pointer-events-none" />
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-display font-extrabold tracking-tight text-white">Monitor Engineering</span>
+                    <span className="relative flex h-1.5 w-1.5 shrink-0">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-200"></span>
+                    </span>
+                  </div>
+                  <span className="text-[8px] font-bold font-mono tracking-wider bg-white/10 text-white border border-white/20 px-2 py-0.5 rounded-full uppercase">Live Feed</span>
                 </div>
-                <p className="text-[11px] text-emerald-100 font-semibold leading-relaxed mt-1.5 font-sans">
+                <p className="text-[11px] text-emerald-100 font-semibold leading-relaxed mt-2 font-sans">
                   Follow local telemetry build updates, hardware casings, and geofencing progress.
                 </p>
               </div>
@@ -510,20 +512,23 @@ export default function App() {
             </div>
           </div>
           
-          <div className="space-y-3">
+          <div className="space-y-3.5">
             {[
-              { title: 'On-device intelligence direction', desc: 'Telemetry processed locally without continuous cloud logging.', color: 'blue', textTheme: 'text-blue-950', descTheme: 'text-blue-800/85', borderTheme: 'border-blue-200/60', bgTheme: 'bg-blue-50/70', badgeBg: 'bg-blue-600' },
-              { title: 'User-controlled data expectations', desc: 'Complete sovereign oversight of vehicle logs and index markers.', color: 'cyan', textTheme: 'text-cyan-950', descTheme: 'text-cyan-800/85', borderTheme: 'border-cyan-200/60', bgTheme: 'bg-cyan-50/70', badgeBg: 'bg-cyan-600' },
-              { title: 'No unnecessary data sharing', desc: 'Secure local containment ensuring absolute hardware isolation.', color: 'purple', textTheme: 'text-purple-950', descTheme: 'text-purple-800/85', borderTheme: 'border-purple-200/60', bgTheme: 'bg-purple-50/70', badgeBg: 'bg-purple-600' },
-              { title: 'No advertising-tracker resale', desc: 'Zero commercial profile monetizations, cookies, or broker networks.', color: 'amber', textTheme: 'text-amber-950', descTheme: 'text-amber-850/85', borderTheme: 'border-amber-200/60', bgTheme: 'bg-amber-50/70', badgeBg: 'bg-amber-600' },
-              { title: 'Built around Canadian driver trust', desc: 'Designed custom tailored and optimized for PIPEDA guidelines.', color: 'emerald', textTheme: 'text-emerald-950', descTheme: 'text-emerald-800/85', borderTheme: 'border-emerald-200/60', bgTheme: 'bg-emerald-50/70', badgeBg: 'bg-emerald-600' }
+              { title: 'On-device intelligence direction', desc: 'Telemetry processed locally without continuous cloud logging.', tag: 'LOCAL-AIS', color: 'blue', textTheme: 'text-blue-950', descTheme: 'text-blue-800/75', borderTheme: 'border-blue-200/50', bgTheme: 'bg-blue-50/45 hover:bg-blue-50/75', badgeBg: 'bg-blue-600 shadow-[0_2px_8px_rgba(0,120,212,0.25)]', tagTheme: 'bg-blue-100/70 text-blue-800 border-blue-200/60' },
+              { title: 'User-controlled data expectations', desc: 'Complete sovereign oversight of vehicle logs and index markers.', tag: 'SOVEREIGN', color: 'cyan', textTheme: 'text-cyan-950', descTheme: 'text-cyan-800/75', borderTheme: 'border-cyan-200/50', bgTheme: 'bg-cyan-50/45 hover:bg-cyan-50/75', badgeBg: 'bg-cyan-600 shadow-[0_2px_8px_rgba(6,182,212,0.25)]', tagTheme: 'bg-cyan-100/70 text-cyan-800 border-cyan-200/60' },
+              { title: 'No unnecessary data sharing', desc: 'Secure local containment ensuring absolute hardware isolation.', tag: 'ISOLATED', color: 'purple', textTheme: 'text-purple-950', descTheme: 'text-purple-800/75', borderTheme: 'border-purple-200/50', bgTheme: 'bg-purple-50/45 hover:bg-purple-50/75', badgeBg: 'bg-purple-600 shadow-[0_2px_8px_rgba(147,51,234,0.25)]', tagTheme: 'bg-purple-100/70 text-purple-800 border-purple-200/60' },
+              { title: 'No advertising-tracker resale', desc: 'Zero commercial profile monetizations, cookies, or broker networks.', tag: 'ZERO-ADS', color: 'amber', textTheme: 'text-amber-950', descTheme: 'text-amber-850/75', borderTheme: 'border-amber-200/50', bgTheme: 'bg-amber-50/45 hover:bg-amber-50/75', badgeBg: 'bg-amber-600 shadow-[0_2px_8px_rgba(217,119,6,0.25)]', tagTheme: 'bg-amber-100/70 text-amber-800 border-amber-200/60' },
+              { title: 'Built around Canadian driver trust', desc: 'Designed custom tailored and optimized for PIPEDA guidelines.', tag: 'PIPEDA', color: 'emerald', textTheme: 'text-emerald-950', descTheme: 'text-emerald-850/75', borderTheme: 'border-emerald-200/50', bgTheme: 'bg-emerald-50/45 hover:bg-emerald-50/75', badgeBg: 'bg-emerald-600 shadow-[0_2px_8px_rgba(16,185,129,0.25)]', tagTheme: 'bg-emerald-100/70 text-emerald-800 border-emerald-200/60' }
             ].map((item, idx) => (
-              <div key={idx} className={`p-3.5 ${item.bgTheme} rounded-2xl border ${item.borderTheme} flex items-start gap-4 hover:shadow-[0_8px_25px_rgba(0,0,0,0.02)] transition-all duration-300 transform hover:scale-[1.002]`}>
-                <div className={`w-8 h-8 rounded-xl ${item.badgeBg} text-white flex items-center justify-center shrink-0 shadow-3xs`}>
+              <div key={idx} className={`p-3.5 ${item.bgTheme} rounded-2xl border ${item.borderTheme} flex items-start gap-4 hover:shadow-[0_8px_25px_rgba(0,0,0,0.015)] transition-all duration-300 transform hover:scale-[1.005]`}>
+                <div className={`w-8 h-8 rounded-xl ${item.badgeBg} text-white flex items-center justify-center shrink-0`}>
                   <Check className="w-4 h-4 text-white stroke-[3.5]" />
                 </div>
                 <div className="flex-1 flex flex-col min-w-0">
-                  <span className={`leading-none font-display font-bold ${item.textTheme} text-xs tracking-tight`}>{item.title}</span>
+                  <div className="flex items-center justify-between gap-1.5">
+                    <span className={`leading-none font-display font-bold ${item.textTheme} text-xs tracking-tight`}>{item.title}</span>
+                    <span className={`text-[8px] font-mono font-bold tracking-wider uppercase border px-1.5 py-0.2 rounded shrink-0 ${item.tagTheme}`}>{item.tag}</span>
+                  </div>
                   <span className={`text-[10px] ${item.descTheme} font-semibold mt-1.5 leading-normal font-sans`}>{item.desc}</span>
                 </div>
               </div>
@@ -587,12 +592,6 @@ export default function App() {
               <p className="text-[9px] text-slate-400/80 font-semibold font-sans tracking-wide">
                 Engineered for Safe & Private Space awareness.
               </p>
-              <button
-                onClick={() => handleOpenModal('readme')}
-                className="mt-1 text-[10px] text-[#0078d4] hover:text-[#005a9e] font-sans font-extrabold hover:underline cursor-pointer"
-              >
-                View System Specifications & README
-              </button>
             </div>
           </div>
         </footer>
