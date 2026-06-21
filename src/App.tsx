@@ -68,17 +68,13 @@ export default function App() {
         {/* HEADER SECTION */}
         <header className="flex flex-col items-center text-center mt-3 gap-1.5">
           {/* Logo Brand Representation */}
-          <div className="flex items-center gap-2.5 mb-1 animate-fade-in">
+          <div className="flex items-center justify-center mb-1 animate-fade-in">
             <img 
-              src="https://i.imgur.com/8EHNbb3.png" 
-              alt="Astrateq Gadgets Logo" 
+              src="https://i.imgur.com/sHJc7d5.png" 
+              alt="Astrateq Gadgets Logo with Brand" 
               referrerPolicy="no-referrer"
-              className="w-9 h-9 object-contain rounded-lg"
+              className="h-12 w-auto object-contain"
             />
-            <div className="flex flex-col items-start text-left">
-              <span className="font-display font-bold text-base tracking-tight text-[#0d1e3d]">ASTRATEQ</span>
-              <span className="text-[9px] text-cyan-600 font-semibold tracking-widest uppercase mt-[-2px]">Gadgets</span>
-            </div>
           </div>
           
           <div className="inline-flex items-center gap-1.5 bg-white border border-cyan-100/80 px-2.5 py-1 rounded-full shadow-xs mb-1">
@@ -122,7 +118,7 @@ export default function App() {
           
           {/* Canadian Microcopy Urgency Info label */}
           <div className="text-center">
-            <span className="text-[10px] font-medium text-cyan-800 bg-cyan-50 px-3 py-1 rounded-full border border-cyan-100/50">
+            <span className="text-[10px] font-medium text-cyan-800 bg-cyan-100/70 px-3 py-1 rounded-full border border-cyan-200 shadow-2xs">
               Limited Canadian founding cohort access — Summer validation phase active
             </span>
           </div>
@@ -134,24 +130,26 @@ export default function App() {
             className="w-full relative group"
           >
             {/* Glow backing */}
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-400 to-[#0d1e3d] rounded-2xl blur-md opacity-35 group-hover:opacity-50 transition duration-300" />
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-400 to-[#0078d4] rounded-2xl blur-md opacity-40 group-hover:opacity-60 transition duration-300 animate-pulse" />
             
             <a 
               href={primaryCTAUrl}
               target="_blank"
               rel="noreferrer"
               referrerPolicy="no-referrer"
-              className="relative w-full h-15 bg-gradient-to-r from-[#0d1e3d] to-[#162f59] rounded-2xl flex flex-col items-center justify-center p-3 text-white shadow-xl hover:shadow-cyan-100/35 transition-all text-center border border-cyan-300/10"
+              className="relative w-full h-16 bg-gradient-to-r from-[#0078d4] to-[#005a9e] rounded-2xl flex flex-col items-center justify-center p-3 text-white shadow-xl hover:shadow-cyan-200/50 transition-all text-center border border-white/20 cursor-pointer overflow-hidden"
               id="cta-primary-cohort"
             >
               <div className="flex items-center gap-2">
+                <Sparkles className="w-4.5 h-4.5 text-cyan-200 animate-pulse shrink-0" />
                 <span className="font-display font-extrabold text-base tracking-wide text-white">
                   Join Founding Driver Cohort
                 </span>
-                <ChevronRight className="w-4 h-4 text-cyan-400" />
+                <ChevronRight className="w-4 h-4 text-cyan-200" />
               </div>
-              <span className="text-[10px] text-cyan-300 font-mono tracking-wider uppercase mt-0.5">
-                Secure early access consideration
+              <span className="text-[10px] text-cyan-100 font-mono tracking-wider uppercase mt-0.5 flex items-center gap-1.5 font-bold">
+                <span>Secure early access consideration</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-pulse" />
               </span>
             </a>
           </motion.div>
@@ -164,23 +162,23 @@ export default function App() {
           <motion.div whileTap={{ scale: 0.98 }} className="group">
             <button
               onClick={() => handleOpenModal('readiness')}
-              className="w-full text-left bg-white border border-slate-200/90 rounded-2xl p-4 flex items-center justify-between hover:border-cyan-400 hover:shadow-xs transition-all relative cursor-pointer"
+              className="w-full text-left bg-white border-l-4 border-l-amber-500 border-y border-r border-slate-200 rounded-r-2xl rounded-l-md p-4 flex items-center justify-between hover:border-amber-400 hover:shadow-[0_8px_25px_rgba(245,158,11,0.12)] hover:bg-amber-50/5 transition-all relative cursor-pointer shadow-xs"
               id="btn-summer-readiness"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100 text-amber-700 flex items-center justify-center shrink-0 border border-amber-200/50">
-                  <Compass className="w-5 h-5 text-amber-600" />
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 text-white flex items-center justify-center shrink-0 border border-amber-400/20 shadow-md shadow-orange-500/10">
+                  <Compass className="w-5 h-5 text-white" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-display font-bold text-sm text-[#0d1e3d], group-hover:text-cyan-700 transition-colors">
+                  <span className="font-display font-extrabold text-sm text-[#0d1e3d] group-hover:text-amber-700 transition-colors">
                     Summer Vehicle Readiness Check
                   </span>
                   <span className="text-xs text-gray-500 font-medium">60-second driver readiness profile</span>
                 </div>
               </div>
               <div className="flex items-center gap-1.5">
-                <span className="text-[10px] font-mono text-cyan-600 hidden xs:inline-flex bg-cyan-50 px-2 py-0.5 rounded-sm border border-cyan-100">Interactive</span>
-                <ChevronRight className="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 transition-transform" />
+                <span className="text-[10px] font-mono text-amber-700 font-bold hidden xs:inline-flex bg-amber-50 px-2 py-0.5 rounded-sm border border-amber-250">Interactive</span>
+                <ChevronRight className="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 group-hover:text-amber-600 transition-all" />
               </div>
             </button>
             
@@ -190,7 +188,7 @@ export default function App() {
                 href="https://join.astrateqgadgets.com/summer-readiness?entry=linkbio&intent=readiness"
                 target="_blank"
                 rel="noreferrer"
-                className="text-[10px] text-gray-400 hover:text-cyan-600 tracking-wide font-mono flex items-center gap-1"
+                className="text-[10px] text-gray-400 hover:text-amber-600 tracking-wide font-mono flex items-center gap-1"
               >
                 <span>Skip to external page</span>
                 <ExternalLink className="w-2.5 h-2.5" />
@@ -202,23 +200,23 @@ export default function App() {
           <motion.div whileTap={{ scale: 0.98 }} className="group">
             <button
               onClick={() => handleOpenModal('compatibility')}
-              className="w-full text-left bg-white border border-slate-200/90 rounded-2xl p-4 flex items-center justify-between hover:border-cyan-400 hover:shadow-xs transition-all cursor-pointer"
+              className="w-full text-left bg-white border-l-4 border-l-cyan-500 border-y border-r border-slate-200 rounded-r-2xl rounded-l-md p-4 flex items-center justify-between hover:border-cyan-400 hover:shadow-[0_8px_25px_rgba(6,182,212,0.12)] hover:bg-cyan-50/5 transition-all cursor-pointer shadow-xs"
               id="btn-vehicle-compatibility"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-700 flex items-center justify-center shrink-0 border border-cyan-100">
-                  <Car className="w-5 h-5 text-cyan-600" />
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white flex items-center justify-center shrink-0 border border-cyan-400/20 shadow-md shadow-cyan-500/10">
+                  <Car className="w-5 h-5 text-white" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-display font-bold text-sm text-[#0d1e3d] group-hover:text-cyan-700 transition-colors">
+                  <span className="font-display font-extrabold text-sm text-[#0d1e3d] group-hover:text-cyan-700 transition-colors">
                     Check Vehicle Compatibility
                   </span>
                   <span className="text-xs text-gray-500 font-medium">Confirm vehicle fit in under 30 seconds</span>
                 </div>
               </div>
               <div className="flex items-center gap-1.5">
-                <span className="text-[10px] font-mono text-cyan-600 hidden xs:inline-flex bg-cyan-50 px-2 py-0.5 rounded-sm border border-cyan-100">Interactive</span>
-                <ChevronRight className="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 transition-transform" />
+                <span className="text-[10px] font-mono text-cyan-700 font-bold hidden xs:inline-flex bg-cyan-50 px-2 py-0.5 rounded-sm border border-cyan-150">Interactive</span>
+                <ChevronRight className="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 group-hover:text-cyan-600 transition-all" />
               </div>
             </button>
             
@@ -239,21 +237,21 @@ export default function App() {
           <motion.div whileTap={{ scale: 0.98 }} className="group">
             <button
               onClick={() => handleOpenModal('explainer')}
-              className="w-full text-left bg-white border border-slate-200/90 rounded-2xl p-4 flex items-center justify-between hover:border-cyan-400 hover:shadow-xs transition-all cursor-pointer"
+              className="w-full text-left bg-white border-l-4 border-l-purple-500 border-y border-r border-slate-200 rounded-r-2xl rounded-l-md p-4 flex items-center justify-between hover:border-purple-400 hover:shadow-[0_8px_25px_rgba(168,85,247,0.12)] hover:bg-purple-50/5 transition-all cursor-pointer shadow-xs"
               id="btn-how-works"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center shrink-0 border border-purple-100">
-                  <Milestone className="w-5 h-5 text-purple-600" />
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-fuchsia-600 text-white flex items-center justify-center shrink-0 border border-purple-400/20 shadow-md shadow-purple-500/10">
+                  <Milestone className="w-5 h-5 text-white" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-display font-bold text-sm text-[#0d1e3d] group-hover:text-cyan-700 transition-colors">
+                  <span className="font-display font-extrabold text-sm text-[#0d1e3d] group-hover:text-purple-700 transition-colors">
                     See How Astrateq Works
                   </span>
                   <span className="text-xs text-gray-500 font-medium">Understand the pre-launch validation concept</span>
                 </div>
               </div>
-              <ChevronRight className="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 transition-transform" />
+              <ChevronRight className="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 group-hover:text-purple-600 transition-all" />
             </button>
             
             <div className="flex justify-end mt-1 px-3">
@@ -261,7 +259,7 @@ export default function App() {
                 href="https://reserve.astrateqgadgets.com?entry=linkbio&intent=explainer"
                 target="_blank"
                 rel="noreferrer"
-                className="text-[10px] text-gray-400 hover:text-cyan-600 tracking-wide font-mono flex items-center gap-1"
+                className="text-[10px] text-gray-400 hover:text-purple-600 tracking-wide font-mono flex items-center gap-1"
               >
                 <span>Open in external tab</span>
                 <ExternalLink className="w-2.5 h-2.5" />
@@ -273,21 +271,21 @@ export default function App() {
           <motion.div whileTap={{ scale: 0.98 }} className="group">
             <button
               onClick={() => handleOpenModal('privacy')}
-              className="w-full text-left bg-white border border-slate-200/90 rounded-2xl p-4 flex items-center justify-between hover:border-cyan-400 hover:shadow-xs transition-all cursor-pointer"
+              className="w-full text-left bg-white border-l-4 border-l-emerald-500 border-y border-r border-slate-200 rounded-r-2xl rounded-l-md p-4 flex items-center justify-between hover:border-emerald-400 hover:shadow-[0_8px_25px_rgba(16,185,129,0.12)] hover:bg-emerald-50/5 transition-all cursor-pointer shadow-xs"
               id="btn-privacy-protection"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0 border border-emerald-100">
-                  <Shield className="w-5 h-5 text-emerald-600" />
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white flex items-center justify-center shrink-0 border border-emerald-400/20 shadow-md shadow-emerald-500/10">
+                  <Shield className="w-5 h-5 text-white" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-display font-bold text-sm text-[#0d1e3d] group-hover:text-cyan-700 transition-colors">
+                  <span className="font-display font-extrabold text-sm text-[#0d1e3d] group-hover:text-emerald-700 transition-colors">
                     How Your Data Is Protected
                   </span>
                   <span className="text-xs text-gray-500 font-medium">Privacy-first approach, no unnecessary exposure</span>
                 </div>
               </div>
-              <ChevronRight className="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 transition-transform" />
+              <ChevronRight className="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 group-hover:text-emerald-600 transition-all" />
             </button>
             
             <div className="flex justify-end mt-1 px-3">
@@ -295,7 +293,7 @@ export default function App() {
                 href="https://reserve.astrateqgadgets.com?entry=linkbio&intent=privacy"
                 target="_blank"
                 rel="noreferrer"
-                className="text-[10px] text-gray-400 hover:text-cyan-600 tracking-wide font-mono flex items-center gap-1"
+                className="text-[10px] text-gray-400 hover:text-emerald-600 tracking-wide font-mono flex items-center gap-1"
               >
                 <span>Open in external tab</span>
                 <ExternalLink className="w-2.5 h-2.5" />
@@ -307,21 +305,21 @@ export default function App() {
           <motion.div whileTap={{ scale: 0.98 }} className="group">
             <button
               onClick={() => handleOpenModal('updates')}
-              className="w-full text-left bg-white border border-slate-200/90 rounded-2xl p-4 flex items-center justify-between hover:border-cyan-400 hover:shadow-xs transition-all cursor-pointer"
+              className="w-full text-left bg-white border-l-4 border-l-[#0078d4] border-y border-r border-slate-200 rounded-r-2xl rounded-l-md p-4 flex items-center justify-between hover:border-blue-400 hover:shadow-[0_8px_25px_rgba(0,120,212,0.12)] hover:bg-blue-50/5 transition-all cursor-pointer shadow-xs"
               id="btn-live-updates"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center shrink-0 border border-blue-100">
-                  <Bell className="w-5 h-5 text-blue-600" />
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0078d4] to-blue-700 text-white flex items-center justify-center shrink-0 border border-blue-400/20 shadow-md shadow-blue-500/10">
+                  <Bell className="w-5 h-5 text-white" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-display font-bold text-sm text-[#0d1e3d] group-hover:text-cyan-700 transition-colors">
+                  <span className="font-display font-extrabold text-sm text-[#0d1e3d] group-hover:text-blue-700 transition-colors">
                     Live Build & Product Updates
                   </span>
                   <span className="text-xs text-gray-500 font-medium">Follow pre-launch progress and updates</span>
                 </div>
               </div>
-              <ChevronRight className="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 transition-transform" />
+              <ChevronRight className="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 group-hover:text-blue-600 transition-all" />
             </button>
             
             <div className="flex justify-end mt-1 px-3">
@@ -329,7 +327,7 @@ export default function App() {
                 href="https://join.astrateqgadgets.com?entry=linkbio&intent=updates"
                 target="_blank"
                 rel="noreferrer"
-                className="text-[10px] text-gray-400 hover:text-cyan-600 tracking-wide font-mono flex items-center gap-1"
+                className="text-[10px] text-gray-400 hover:text-blue-600 tracking-wide font-mono flex items-center gap-1"
               >
                 <span>Open in external tab</span>
                 <ExternalLink className="w-2.5 h-2.5" />
