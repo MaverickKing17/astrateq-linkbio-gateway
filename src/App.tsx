@@ -142,50 +142,98 @@ export default function App() {
         </div>
 
         {/* PRIMARY CTA SECTION */}
-        {/* PRIMARY CTA SECTION (Ultra High-Impact Apple/Porsche Conversion Flow) */}
-        <div className="flex flex-col gap-2.5">
+        {/* TIMES SQUARE HIGH-IMPACT BILLBOARD CONVERSION MODULE */}
+        <div className="relative overflow-hidden rounded-3xl bg-slate-950 p-6 md:p-7.5 text-white border-2 border-[#0078d4]/80 shadow-[0_20px_50px_rgba(0,120,212,0.25)] ring-4 ring-[#0078d4]/20 group">
           
-          {/* Canadian Microcopy Urgency Info label */}
-          <div className="text-center">
-            <span className="inline-flex items-center gap-1.5 text-[9px] font-bold text-[#005a9e] bg-[#e1f0fc] px-4 py-1.5 rounded-full border border-[#0078d4]/20 shadow-[0_2px_12px_rgba(0,120,212,0.04)] uppercase tracking-wide">
-              <span>Limited Canadian Founding Cohort Access</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#0078d4] animate-ping" />
-            </span>
-          </div>
+          {/* Ambient Cybernetic Neon BG Lights */}
+          <div className="absolute top-0 left-1/4 -translate-y-1/2 w-48 h-48 bg-[#0078d4]/30 rounded-full blur-3xl pointer-events-none animate-pulse" />
+          <div className="absolute bottom-0 right-1/4 translate-y-1/2 w-48 h-48 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none animate-pulse duration-4000" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30 pointer-events-none" />
 
-          {/* Primary Dominant Cohesive Button */}
-          <motion.div
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.985 }}
-            className="w-full relative group"
-          >
-            {/* Pulsing luxurious glow backing */}
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-400 via-[#0078d4] to-cyan-400 rounded-2xl blur-md opacity-40 group-hover:opacity-75 transition duration-500 animate-pulse" />
+          <div className="relative z-10 flex flex-col gap-4.5">
             
-            <a 
-              href={primaryCTAUrl}
-              target="_blank"
-              rel="noreferrer"
-              referrerPolicy="no-referrer"
-              className="relative w-full h-16 bg-gradient-to-r from-[#0078d4] via-[#0066b2] to-[#005a9e] rounded-2xl flex flex-col items-center justify-center p-3 text-white shadow-2xl hover:shadow-[#0078d4]/30 transition-all text-center border border-white/30 cursor-pointer overflow-hidden group/btn"
-              id="cta-primary-cohort"
-            >
-              {/* Premium shining glass visual effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover/btn:animate-shine duration-1000" />
-              
-              <div className="flex items-center gap-2 relative z-10">
-                <Sparkles className="w-4.5 h-4.5 text-cyan-200 animate-pulse shrink-0" />
-                <span className="font-sans font-extrabold text-base tracking-wide text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.2)]">
-                  Join Founding Driver Cohort
+            {/* Live Ticker Status Header */}
+            <div className="flex items-center justify-between gap-2 border-b border-white/10 pb-3">
+              <div className="flex items-center gap-1.5">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                <ChevronRight className="w-4 h-4 text-cyan-200 group-hover/btn:translate-x-1 transition-transform" />
+                <span className="text-[10px] md:text-xs font-mono font-bold uppercase tracking-widest text-emerald-400">
+                  Live Recruitment Active
+                </span>
               </div>
-              <span className="text-[9px] text-cyan-100 font-mono tracking-wider uppercase mt-1 flex items-center gap-1.5 font-extrabold relative z-10 drop-shadow-[0_1px_1px_rgba(0,0,0,0.1)]">
-                <span>Secure Early Access Consideration</span>
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-pulse" />
+              <span className="text-[9.5px] md:text-[11px] font-mono font-extrabold text-cyan-300 tracking-wider">
+                92% ALLOCATED
               </span>
-            </a>
-          </motion.div>
+            </div>
+
+            {/* Canadian Founding Cohort Title Banner */}
+            <div className="text-center py-1">
+              <span className="inline-flex flex-col items-center gap-1">
+                <span className="text-[11px] md:text-sm font-sans font-black text-white tracking-widest uppercase bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent drop-shadow-sm">
+                  ★ REGULATION REPORT ★
+                </span>
+                <span className="text-sm md:text-base font-sans font-black text-white hover:text-cyan-200 transition-colors tracking-wide uppercase">
+                  Limited Canadian Founding Cohort Access
+                </span>
+              </span>
+            </div>
+
+            {/* Massive Times-Square Style CTA Button */}
+            <motion.div
+              whileHover={{ scale: 1.02, y: -2 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-full relative"
+            >
+              {/* Dynamic pulsing neon backdrop glow */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 via-[#0078d4] to-blue-600 rounded-2xl blur-xl opacity-80 group-hover:opacity-100 transition duration-300 animate-pulse" />
+              
+              <a 
+                href={primaryCTAUrl}
+                target="_blank"
+                rel="noreferrer"
+                referrerPolicy="no-referrer"
+                className="relative w-full py-4.5 bg-gradient-to-r from-cyan-500 via-[#0078d4] to-[#005a9e] rounded-2xl flex flex-col items-center justify-center text-white shadow-[0_8px_30px_rgba(0,120,212,0.4)] hover:shadow-[0_15px_45px_rgba(0,120,212,0.6)] transition-all text-center border-2 border-white/50 cursor-pointer overflow-hidden group/btn"
+                id="cta-primary-cohort"
+              >
+                {/* Premium active neon hover sheen */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover/btn:animate-shine duration-1000" />
+                
+                <div className="flex items-center gap-2.5 px-4">
+                  <Sparkles className="w-5.5 h-5.5 text-cyan-200 animate-bounce shrink-0" />
+                  <span className="font-sans font-black text-lg md:text-xl tracking-wide uppercase text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
+                    Join Founding Driver Cohort
+                  </span>
+                  <ChevronRight className="w-5 h-5 text-cyan-200 group-hover/btn:translate-x-1.5 transition-transform duration-300 stroke-[3]" />
+                </div>
+                
+                <div className="mt-1 flex items-center gap-2 px-3 py-0.5 bg-black/40 rounded-full border border-white/15">
+                  <span className="text-[10px] md:text-[11.5px] text-cyan-200 font-mono tracking-wider uppercase font-bold">
+                    Secure Canadian Validation priority
+                  </span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-pulse" />
+                </div>
+              </a>
+            </motion.div>
+
+            {/* Micro-trust indicators below the button */}
+            <div className="grid grid-cols-3 gap-2 text-center pt-1 border-t border-white/10">
+              <div className="flex flex-col items-center gap-1">
+                <Shield className="w-4 h-4 text-cyan-400" />
+                <span className="text-[9px] font-mono text-slate-300 font-bold uppercase tracking-wider">SECURE ENTRY</span>
+              </div>
+              <div className="flex flex-col items-center gap-1 border-x border-white/10">
+                <span className="text-xs font-black text-[#0078d4] font-mono">100%</span>
+                <span className="text-[9px] font-mono text-slate-300 font-bold uppercase tracking-wider">PRIVACY MATCH</span>
+              </div>
+              <div className="flex flex-col items-center gap-1">
+                <span className="text-xs font-black text-emerald-400 font-mono">FREE</span>
+                <span className="text-[9px] font-mono text-slate-300 font-bold uppercase tracking-wider">REGISTRATION</span>
+              </div>
+            </div>
+
+          </div>
         </div>        {/* SECONDARY ACTION BUTTONS FLOW (Integrated Dual-Action Touch Targets) */}
         <div className="flex flex-col gap-4">
           
@@ -444,7 +492,7 @@ export default function App() {
             
             {/* Onboarding step 1 */}
             <div className="flex items-start gap-4.5 relative z-10 group/item">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 text-white flex items-center justify-center font-display font-bold text-sm shrink-0 shadow-[0_4px_14px_rgba(0,120,212,0.35)] ring-4 ring-blue-50/70 z-20 transition-transform duration-300 group-hover/item:scale-110">
+              <div className="w-10 h-10 rounded-full bg-blue-600 bg-gradient-to-br from-blue-600 to-blue-800 text-white flex items-center justify-center font-display font-bold text-sm shrink-0 shadow-[0_4px_14px_rgba(0,120,212,0.35)] ring-4 ring-blue-50/70 z-20 transition-transform duration-300 group-hover/item:scale-110">
                 1
               </div>
               <div className="flex-1 flex flex-col bg-gradient-to-br from-[#0c243c] via-[#004b87] to-[#0078d4] p-4.5 rounded-2xl border border-blue-500/30 shadow-[0_10px_35px_rgba(0,120,212,0.15)] hover:shadow-[0_12px_40px_rgba(0,120,212,0.25)] transition-all duration-300 transform hover:scale-[1.01] text-white relative overflow-hidden">
@@ -467,7 +515,7 @@ export default function App() {
 
             {/* Onboarding step 2 */}
             <div className="flex items-start gap-4.5 relative z-10 group/item">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-cyan-700 text-white flex items-center justify-center font-display font-bold text-sm shrink-0 shadow-[0_4px_14px_rgba(6,182,212,0.35)] ring-4 ring-cyan-50/70 z-20 transition-transform duration-300 group-hover/item:scale-110">
+              <div className="w-10 h-10 rounded-full bg-cyan-600 bg-gradient-to-br from-cyan-500 to-cyan-700 text-white flex items-center justify-center font-display font-bold text-sm shrink-0 shadow-[0_4px_14px_rgba(6,182,212,0.35)] ring-4 ring-cyan-50/70 z-20 transition-transform duration-300 group-hover/item:scale-110">
                 2
               </div>
               <div className="flex-1 flex flex-col bg-gradient-to-br from-[#063442] via-[#00637c] to-[#01a2c4] p-4.5 rounded-2xl border border-cyan-500/30 shadow-[0_10px_35px_rgba(6,182,212,0.15)] hover:shadow-[0_12px_40px_rgba(6,182,212,0.25)] transition-all duration-300 transform hover:scale-[1.01] text-white relative overflow-hidden">
@@ -487,7 +535,7 @@ export default function App() {
 
             {/* Onboarding step 3 */}
             <div className="flex items-start gap-4.5 relative z-10 group/item">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-750 text-white flex items-center justify-center font-display font-bold text-sm shrink-0 shadow-[0_4px_14px_rgba(16,185,129,0.35)] ring-4 ring-emerald-50/70 z-20 transition-transform duration-300 group-hover/item:scale-110">
+              <div className="w-10 h-10 rounded-full bg-emerald-600 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white flex items-center justify-center font-display font-bold text-sm shrink-0 shadow-[0_4px_14px_rgba(16,185,129,0.35)] ring-4 ring-emerald-50/70 z-20 transition-transform duration-300 group-hover/item:scale-110">
                 3
               </div>
               <div className="flex-1 flex flex-col bg-gradient-to-br from-[#023c22] via-[#057a44] to-[#10b981] p-4.5 rounded-2xl border border-emerald-500/30 shadow-[0_10px_35px_rgba(16,185,129,0.15)] hover:shadow-[0_12px_40px_rgba(16,185,129,0.25)] transition-all duration-300 transform hover:scale-[1.01] text-white relative overflow-hidden">
