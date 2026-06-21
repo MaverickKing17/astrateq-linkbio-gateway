@@ -103,15 +103,24 @@ export default function App() {
         </header>
 
         {/* HERO SECTION (Porsche dynamic layout) */}
-        <div id="hero-card" className="bg-white/95 backdrop-blur-md rounded-3xl p-5 border border-slate-200/60 shadow-[0_8px_30px_rgba(0,0,0,0.02)] flex flex-col gap-4 relative overflow-hidden transition-all hover:shadow-[0_12px_40px_rgba(0,120,212,0.04)]">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-300/5 to-cyan-300/5 rounded-full blur-2xl pointer-events-none" />
+        <div id="hero-card" className="bg-gradient-to-tr from-white via-white to-blue-50/20 backdrop-blur-md rounded-3xl p-6 border border-slate-200/60 shadow-[0_10px_35px_rgba(0,102,178,0.02)] flex flex-col gap-4 relative overflow-hidden transition-all hover:shadow-[0_16px_45px_rgba(0,120,212,0.06)] hover:border-[#0078d4]/25 duration-500">
+          <div className="absolute -top-10 -right-10 w-44 h-44 bg-gradient-to-br from-blue-300/10 via-cyan-200/5 to-transparent rounded-full blur-2xl pointer-events-none" />
           
-          <div className="space-y-2">
-            <h1 className="font-display font-extrabold text-xl leading-snug tracking-tight text-slate-900">
-              Privacy-first vehicle intelligence for safer driving decisions.
+          <div className="space-y-3.5">
+            {/* Premium product tag / badge */}
+            <div className="flex items-center gap-2 select-none">
+              <span className="px-2.5 py-0.5 text-[8.5px] font-mono tracking-widest font-extrabold text-[#0078d4] bg-[#0078d4]/8 rounded-md uppercase border border-[#0078d4]/15">
+                Cohort Exclusive
+              </span>
+              <span className="text-[9px] text-slate-300 font-medium font-sans">•</span>
+              <span className="text-[9.5px] text-slate-500 font-bold font-mono tracking-wider uppercase">Astrateq Intel Gen-II</span>
+            </div>
+
+            <h1 className="font-display font-black text-xl md:text-2xl leading-snug tracking-tight text-slate-900">
+              Privacy-first <span className="bg-gradient-to-r from-[#005a9e] via-[#0078d4] to-cyan-500 bg-clip-text text-transparent">vehicle intelligence</span> for safer driving decisions.
             </h1>
-            <p className="text-xs text-slate-500 leading-relaxed font-semibold">
-              Join early access, check your vehicle fit, or complete the Summer Readiness Check before the Canadian founding cohort window closes.
+            <p className="text-[12.5px] text-slate-600 leading-relaxed font-sans font-medium">
+              Join early access, check your vehicle fit, or complete the <span className="text-[#0078d4] font-bold underline decoration-[#0078d4]/20 decoration-2 underline-offset-2">Summer Readiness Check</span> before the Canadian founding cohort window closes.
             </p>
           </div>
 
