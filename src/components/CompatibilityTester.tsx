@@ -23,13 +23,13 @@ export default function CompatibilityTester({ onClose }: CompatibilityTesterProp
     if (isModern) {
       setResult({
         isCompatible: true,
-        message: `Great news! Your ${year} ${make} ${model || ''} meets Astrateq's hardware and telemetry integration standards. Your vehicle platform qualifies for our plug-and-play founding driver kit.`,
+        message: `Your ${year} ${make} ${model || ''} meets all compatibility requirements for the Astrateq hardware architecture and telemetry standards. This vehicle platform is fully supported for the plug-and-play Founding Driver Kit.`,
         badge: 'FIT2026_ACTIVE'
       });
     } else {
       setResult({
         isCompatible: false,
-        message: `Your ${year} ${make} is supported with our auxiliary legacy adapter, though some advanced telemetry functions may be limited. You can still join the cohort to validate your vehicle's fit.`,
+        message: `Your ${year} ${make} can be integrated using our auxiliary legacy adapter. Please note that some advanced regional telemetry features may have restricted functionality. You can still join the founding cohort to complete your vehicle validation.`,
         badge: 'LEGCY_VALID'
       });
     }

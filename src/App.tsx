@@ -68,11 +68,14 @@ export default function App() {
         {/* HEADER SECTION */}
         <header className="flex flex-col items-center text-center mt-3 gap-1.5">
           {/* Logo Brand Representation */}
-          <div className="flex items-center gap-2 mb-1">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 to-[#0d1e3d] flex items-center justify-center text-white font-display font-black text-lg shadow-sm border border-cyan-100/20">
-              A
-            </div>
-            <div className="flex flex-col items-start">
+          <div className="flex items-center gap-2.5 mb-1 animate-fade-in">
+            <img 
+              src="https://i.imgur.com/8EHNbb3.png" 
+              alt="Astrateq Gadgets Logo" 
+              referrerPolicy="no-referrer"
+              className="w-9 h-9 object-contain rounded-lg"
+            />
+            <div className="flex flex-col items-start text-left">
               <span className="font-display font-bold text-base tracking-tight text-[#0d1e3d]">ASTRATEQ</span>
               <span className="text-[9px] text-cyan-600 font-semibold tracking-widest uppercase mt-[-2px]">Gadgets</span>
             </div>

@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Space Grotesk", sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-sans: "Segoe UI", -apple-system, BlinkMacSystemFont, "Segoe UI Variable Text", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Segoe UI Semibold", "Segoe UI", -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", sans-serif;
+  --font-mono: "Segoe UI Mono", "Cascadia Code", "Fira Code", "JetBrains Mono", ui-monospace, monospace;
 
-  --color-brand-bg: #f5f8fa; /* Soft pearl / ice-blue background */
-  --color-brand-navy: #0d1e3d; /* Midnight navy text and primary elements */
-  --color-brand-cyan: #06b6d4; /* Pure cyan accents */
-  --color-brand-ice: #e6f0fa; /* Ice-blue base */
-  --color-brand-accent: #0284c7; /* Sky-blue accent */
+  --color-brand-bg: #f3f4f6; /* Microsoft light grey/off-white background */
+  --color-brand-navy: #0f172a; /* Clean slate-900 / dark corporate blue text */
+  --color-brand-cyan: #0078d4; /* Classic Microsoft blue accent */
+  --color-brand-ice: #e1dfdd; /* Clean grey/neutral base */
+  --color-brand-accent: #107c41; /* Microsoft secondary green or blue accent */
 }
 
 body {
   background-color: var(--color-brand-bg);
   color: var(--color-brand-navy);
   font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

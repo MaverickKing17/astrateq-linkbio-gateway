@@ -212,8 +212,8 @@ export default function ReadinessWizard({ onClose }: ReadinessWizardProps) {
               </div>
               <p className="text-xs text-gray-600 pt-2 leading-relaxed">
                 {finalScore >= 90
-                  ? "Your summer commute or cottage travel aligns perfectly with Astrateq's on-device micro-radar and situational awareness algorithms. Secure your priority invite to validate."
-                  : "Excellent candidate. Your city bypass concern and privacy priority indicates Astrateq’s Local Privacy Policy meets your on-device driver comfort requirements."}
+                  ? "Your summer high-speed driving patterns qualify for the on-device intelligence trials. The Astrateq system processes telemetry markers on-device to enhance highway awareness without cloud logging."
+                  : "Astrateq is optimized for your safety concerns. Our on-device spatial telemetry algorithms address merging risk and bypass lag while fully prioritizing user trust."}
               </p>
             </div>
 
