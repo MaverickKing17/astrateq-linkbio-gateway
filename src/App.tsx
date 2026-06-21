@@ -93,12 +93,12 @@ export default function App() {
             <span className="text-[10px] font-bold text-[#0066b2] tracking-[0.08em] uppercase font-mono">Summer 2026 Trial Phase</span>
           </div>
 
-          <div className="flex items-center gap-4 mt-1">
-            <div className="h-[1px] w-12 bg-gradient-to-r from-transparent via-slate-200 to-slate-400/50" />
-            <p className="text-[11px] font-display font-medium text-slate-500/90 tracking-[0.25em] uppercase transition-all duration-500 hover:text-[#0078d4] hover:tracking-[0.28em] select-none">
-              Drive Safer <span className="text-[#0078d4] font-sans mx-1 opacity-80 animate-pulse">•</span> Drive Smarter
+          <div className="flex items-center gap-4 mt-2">
+            <div className="h-[1px] w-14 bg-gradient-to-r from-transparent via-slate-300 to-slate-400/40" />
+            <p className="text-[11px] font-display font-bold text-slate-700 tracking-[0.28em] uppercase transition-all duration-500 hover:text-[#0078d4] hover:tracking-[0.3em] select-none">
+              Drive Safer <span className="text-[#0078d4] font-sans mx-1 opacity-90 animate-pulse">•</span> Drive Smarter
             </p>
-            <div className="h-[1px] w-12 bg-gradient-to-l from-transparent via-slate-200 to-slate-400/50" />
+            <div className="h-[1px] w-14 bg-gradient-to-l from-transparent via-slate-300 to-slate-400/40" />
           </div>
         </header>
 
@@ -542,60 +542,96 @@ export default function App() {
 
         {/* MICROSOFT-TOUCH HIGH DISCLOSURE PRE-LAUNCH TRANSPARENCY NOTE */}
         <footer className="space-y-6 pt-2 text-center">
-          <div className="bg-white border border-slate-200/60 rounded-2xl p-4 text-left shadow-[0_4px_16px_rgba(0,0,0,0.005)] relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-16 h-16 bg-slate-50/50 rounded-bl-full pointer-events-none" />
+          <div className="bg-gradient-to-br from-blue-50/60 via-white to-blue-50/30 border-2 border-blue-400/70 rounded-3xl p-6.5 text-left shadow-[0_0_25px_rgba(0,120,212,0.25)] ring-4 ring-blue-100/45 relative overflow-hidden group hover:border-[#0078d4] hover:shadow-[0_0_35px_rgba(0,120,212,0.45)] hover:ring-blue-100/80 transition-all duration-500">
+            {/* Elegant premium left gradient highlight bar */}
+            <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#0078d4] via-[#0066b2] to-[#01a2c4] rounded-l-full" />
             
-            <div className="flex items-center gap-2 font-extrabold text-slate-900 mb-2 font-sans text-xs tracking-tight">
-              <div className="w-5 h-5 rounded-md bg-slate-50 flex items-center justify-center border border-slate-100 font-semibold">
-                <Info className="w-3.5 h-3.5 text-[#0078d4]" />
+            {/* Subtle light blue radial glow behind */}
+            <div className="absolute -top-12 -right-12 w-40 h-40 bg-gradient-to-bl from-blue-100/30 via-transparent to-transparent opacity-70 rounded-full blur-xl pointer-events-none group-hover:opacity-100 transition-opacity duration-500" />
+            
+            <div className="flex items-center justify-between gap-3 mb-4">
+              <div className="flex items-center gap-2.5 font-display font-medium">
+                <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-50 to-blue-100/60 flex items-center justify-center border border-blue-200/50 shadow-3xs group-hover:scale-110 transition-transform duration-300">
+                  <Shield className="w-4 h-4 text-[#0078d4] stroke-[2.5]" />
+                </div>
+                <span className="uppercase tracking-[0.2em] text-[10.5px] text-[#0078d4] font-mono font-extrabold">Disclosure Protocol</span>
               </div>
-              <span className="uppercase tracking-wider text-[10px] text-slate-400 font-mono">Disclosure Protocol</span>
+              <span className="text-[8.5px] font-mono font-bold text-[#0066b2] bg-blue-50 border border-blue-100/50 px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-3xs">
+                Active Verification
+              </span>
             </div>
             
-            <p className="text-[11px] text-slate-500 leading-relaxed font-semibold">
-              Astrateq Gadgets is currently in pre-launch market validation. Hardware availability, compatibility, and rollout timing are subject to validation results, supplier readiness, and future manufacturing decisions.
+            <p className="text-xs md:text-[13px] text-slate-600/95 leading-relaxed font-sans font-medium pl-1 md:pl-2.5 transition-colors duration-300">
+              <span className="text-slate-900 font-bold">Astrateq Gadgets™</span> is currently undergoing an active, regulated period of <span className="text-[#0078d4] font-bold underline decoration-[#0078d4]/30 decoration-2 underline-offset-4">pre-launch market validation</span>. Full physical hardware availability, consumer vehicle compatibility indices, and exact target release schedules remain strictly subject to ongoing validation outcomes, manufacturing partner readiness, and ultimate corporate leadership approval.
             </p>
           </div>
 
-          {/* SOCIAL LINKS (Apple Minimal High-Touch Icon Trays) */}
-          <div className="space-y-4 pt-1">
-            <div className="flex justify-center gap-4">
-              <a
-                href={socialLinks.instagram}
-                target="_blank"
-                rel="noreferrer"
-                className="w-10 h-10 rounded-full bg-white border border-slate-200/80 flex items-center justify-center text-slate-800 hover:text-pink-600 hover:bg-pink-50/10 hover:border-pink-200 hover:shadow-xs active:scale-95 transition-all duration-300 shrink-0 shadow-3xs"
-                title="Follow Instagram (@astrateq24)"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href={socialLinks.x}
-                target="_blank"
-                rel="noreferrer"
-                className="w-10 h-10 rounded-full bg-white border border-slate-200/80 flex items-center justify-center text-slate-800 hover:text-[#0078d4] hover:bg-blue-50/10 hover:border-blue-200 hover:shadow-xs active:scale-95 transition-all duration-300 shrink-0 shadow-3xs"
-                title="Follow X / Twitter (@AstrateqIQ)"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href={socialLinks.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="w-10 h-10 rounded-full bg-white border border-slate-200/80 flex items-center justify-center text-slate-800 hover:text-blue-700 hover:bg-blue-50/10 hover:border-blue-200 hover:shadow-xs active:scale-95 transition-all duration-300 shrink-0 shadow-3xs"
-                title="Follow LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
+          {/* SOCIAL LINKS & COPYRIGHT SECTION (Premium Fluent Microsoft Aesthetic Panel) */}
+          <div className="relative mt-8 p-6.5 rounded-3xl bg-gradient-to-b from-slate-50/40 via-white to-slate-50/60 border border-slate-200/60 shadow-[0_8px_30px_rgba(0,0,0,0.01)] hover:shadow-[0_12px_40px_rgba(0,102,178,0.03)] hover:border-[#0078d4]/15 transition-all duration-500 overflow-hidden text-center">
             
-            <div className="flex flex-col items-center gap-1">
-              <p className="text-[10px] text-slate-400 font-mono tracking-widest font-bold uppercase">
-                &copy; {new Date().getFullYear()} Astrateq Gadgets. All rights reserved.
-              </p>
-              <p className="text-[9px] text-slate-400/80 font-semibold font-sans tracking-wide">
-                Engineered for Safe & Private Space awareness.
-              </p>
+            {/* Ambient decorative glowing backlights to represent the core products */}
+            <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-32 h-32 bg-pink-400/10 rounded-full blur-2xl pointer-events-none opacity-40 select-none" />
+            <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-32 h-32 bg-blue-400/10 rounded-full blur-2xl pointer-events-none opacity-40 select-none" />
+
+            <div className="flex flex-col items-center gap-5 relative z-10">
+              
+              {/* Premium Title or Line with visual indicator */}
+              <div className="flex items-center gap-3 w-full max-w-xs justify-center select-none">
+                <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent to-slate-200/80" />
+                <span className="text-[9.5px] font-bold font-mono text-slate-400/90 tracking-[0.2em] uppercase">Stay Connected</span>
+                <div className="h-[1px] flex-1 bg-gradient-to-l from-transparent to-slate-200/80" />
+              </div>
+
+              {/* Social Buttons Block (Preserving components as requested) */}
+              <div className="flex justify-center gap-5">
+                <a
+                  href={socialLinks.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-12 h-12 rounded-full bg-white border border-pink-400/20 text-pink-600 flex items-center justify-center shadow-[0_3px_12px_rgba(219,39,119,0.06)] hover:bg-gradient-to-br hover:from-pink-500 hover:to-rose-600 hover:text-white hover:border-pink-500 active:scale-90 transition-all duration-300 hover:shadow-[0_8px_20px_rgba(219,39,119,0.3)] shrink-0 group/icon"
+                  title="Follow Instagram (@astrateq24)"
+                >
+                  <Instagram className="w-5.5 h-5.5 group-hover/icon:scale-110 transition-transform duration-300" />
+                </a>
+                <a
+                  href={socialLinks.x}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-12 h-12 rounded-full bg-white border border-sky-400/20 text-[#0078d4] flex items-center justify-center shadow-[0_3px_12px_rgba(0,120,212,0.06)] hover:bg-gradient-to-br hover:from-sky-500 hover:to-[#005a9e] hover:text-white hover:border-[#0078d4] active:scale-90 transition-all duration-300 hover:shadow-[0_8px_20px_rgba(0,120,212,0.3)] shrink-0 group/icon"
+                  title="Follow X / Twitter (@AstrateqIQ)"
+                >
+                  <Twitter className="w-5.5 h-5.5 group-hover/icon:scale-110 transition-transform duration-300" />
+                </a>
+                <a
+                  href={socialLinks.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-12 h-12 rounded-full bg-white border border-blue-400/20 text-blue-700 flex items-center justify-center shadow-[0_3px_12px_rgba(26,54,93,0.06)] hover:bg-gradient-to-br hover:from-blue-600 hover:to-indigo-800 hover:text-white hover:border-blue-600 active:scale-90 transition-all duration-300 hover:shadow-[0_8px_20px_rgba(26,54,93,0.3)] shrink-0 group/icon"
+                  title="Follow LinkedIn"
+                >
+                  <Linkedin className="w-5.5 h-5.5 group-hover/icon:scale-110 transition-transform duration-300" />
+                </a>
+              </div>
+              
+              {/* Splitter */}
+              <div className="w-full max-w-sm h-[1px] bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
+
+              {/* Copyright Info - Enlarged, Visual Clarity, Segoe UI (font-sans) */}
+              <div className="flex flex-col items-center gap-1.5 max-w-md">
+                <p className="text-xs md:text-[13.5px] font-sans font-bold text-slate-800 tracking-[0.05em] select-none flex flex-wrap items-center justify-center gap-x-1.5 gap-y-0.5 transition-colors duration-300 hover:text-[#0078d4]">
+                  <span>&copy; {new Date().getFullYear()}</span>
+                  <span className="font-extrabold uppercase text-[#0c243c]">Astrateq Gadgets™</span>
+                  <span className="font-medium text-slate-400">•</span>
+                  <span className="font-semibold text-slate-600">All Rights Reserved.</span>
+                </p>
+                <div className="flex items-center gap-1.5 mt-0.5 select-none">
+                  <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+                  <p className="text-[10.5px] md:text-sm text-slate-500 font-sans font-medium tracking-wide">
+                    Engineered for Safe & Private Space awareness.
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
         </footer>
