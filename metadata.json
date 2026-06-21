@@ -1,0 +1,6 @@
+{
+  "name": "Astrateq Gadgets Gateway",
+  "description": "Premium mobile-first market validation gateway and pre-launch cohort reservation funnel for Astrateq Gadgets",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
