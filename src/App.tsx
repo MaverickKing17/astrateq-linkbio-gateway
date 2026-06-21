@@ -119,8 +119,8 @@ export default function App() {
             <h1 className="font-display font-black text-xl md:text-2xl leading-snug tracking-tight text-slate-900">
               Privacy-first <span className="bg-gradient-to-r from-[#005a9e] via-[#0078d4] to-cyan-500 bg-clip-text text-transparent">vehicle intelligence</span> for safer driving decisions.
             </h1>
-            <p className="text-[12.5px] text-slate-600 leading-relaxed font-sans font-medium">
-              Join early access, check your vehicle fit, or complete the <span className="text-[#0078d4] font-bold underline decoration-[#0078d4]/20 decoration-2 underline-offset-2">Summer Readiness Check</span> before the Canadian founding cohort window closes.
+            <p className="text-[13.5px] md:text-[15.5px] text-slate-600 leading-relaxed font-sans font-medium tracking-tight">
+              Join early access, check your vehicle fit, or complete the <span className="text-[#0078d4] font-extrabold underline decoration-[#0078d4]/25 decoration-2 underline-offset-4 hover:text-[#005a9e] hover:decoration-[#0078d4]/50 transition-colors duration-300">Summer Readiness Check</span> before the Canadian founding cohort window closes.
             </p>
           </div>
 
