@@ -186,33 +186,33 @@ export default function App() {
               whileTap={{ scale: 0.98 }}
               className="w-full relative group/mo"
             >
-              {/* Dynamic pulsing neon backdrop glow in brilliant Tangerine Orange / Fire Coral */}
-              <div className="absolute -inset-1.5 bg-gradient-to-r from-[#ff3c00] via-[#ff7c00] to-[#ffb700] rounded-2xl blur-xl opacity-85 group-hover/mo:opacity-100 group-hover/mo:scale-103 transition duration-300 animate-pulse" />
+              {/* Dynamic pulsing neon backdrop glow in brilliant premium tangerine-orange / electric fire */}
+              <div className="absolute -inset-1.5 bg-gradient-to-r from-[#ff3c00] via-[#ff6f00] to-[#ffb700] rounded-2xl blur-xl opacity-80 group-hover/mo:opacity-100 group-hover/mo:scale-103 transition duration-300 animate-pulse" />
               
               <a 
                 href={primaryCTAUrl}
                 target="_blank"
                 rel="noreferrer"
                 referrerPolicy="no-referrer"
-                className="relative w-full py-5 bg-gradient-to-tr from-[#e04a00] via-[#ff6b00] to-[#ffbe00] rounded-2xl flex flex-col items-center justify-center text-white shadow-[0_8px_35px_rgba(255,107,0,0.45)] hover:shadow-[0_15px_45px_rgba(255,107,0,0.7)] transition-all text-center border-2 border-white/70 cursor-pointer overflow-hidden group/btn"
+                className="relative w-full py-5.5 bg-gradient-to-r from-[#c63300] via-[#e65c00] to-[#ff7c00] rounded-2xl flex flex-col items-center justify-center text-white shadow-[0_12px_40px_rgba(230,74,0,0.35)] hover:shadow-[0_20px_50px_rgba(255,108,0,0.55)] transition-all text-center border-2 border-white/40 cursor-pointer overflow-hidden group/btn"
                 id="cta-primary-cohort"
               >
                 {/* Premium active neon hover sheen */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/35 to-transparent -translate-x-full group-hover/btn:animate-shine duration-1000" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent -translate-x-full group-hover/btn:animate-shine duration-1100" />
                 
-                <div className="flex items-center gap-2.5 px-4">
-                  <Sparkles className="w-6 h-6 text-amber-200 animate-bounce shrink-0" />
-                  <span className="font-sans font-black text-lg md:text-xl tracking-wide uppercase text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
+                <div className="flex items-center gap-2.5 px-5 relative z-10">
+                  <Sparkles className="w-6.5 h-6.5 text-[#ffe2cc] animate-bounce shrink-0 drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]" />
+                  <span className="font-sans font-black text-xl md:text-2xl tracking-wide uppercase text-white drop-shadow-[0_2px_5px_rgba(0,0,0,0.65)]">
                     Join Founding Driver Cohort
                   </span>
-                  <ChevronRight className="w-5.5 h-5.5 text-amber-200 group-hover/btn:translate-x-1.5 transition-transform duration-300 stroke-[3.5]" />
+                  <ChevronRight className="w-6 h-6 text-[#ffe2cc] group-hover/btn:translate-x-2 transition-transform duration-300 stroke-[4] drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]" />
                 </div>
                 
-                <div className="mt-1 flex items-center gap-2 px-3 py-0.5 bg-black/40 rounded-full border border-white/10">
-                  <span className="text-[10px] md:text-[11.5px] text-amber-200 font-mono tracking-wider uppercase font-extrabold">
+                <div className="mt-1.5 flex items-center gap-2 px-3 py-0.5 bg-black/40 rounded-full border border-white/10 relative z-10">
+                  <span className="text-[10px] md:text-[11px] text-[#ffe2cc] font-mono tracking-wider uppercase font-black">
                     Secure Canadian Validation priority
                   </span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-ping" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-pulse" />
                 </div>
               </a>
             </motion.div>
