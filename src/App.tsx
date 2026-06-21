@@ -153,9 +153,7 @@ export default function App() {
               </span>
             </a>
           </motion.div>
-        </div>
-
-        {/* SECONDARY ACTION BUTTONS FLOW */}
+        </div>        {/* SECONDARY ACTION BUTTONS FLOW */}
         <div className="flex flex-col gap-3">
           
           {/* Button 1: Summer Vehicle Readiness Check (IMPROVED - FIRST UNDER COHORT CTA) */}
@@ -165,9 +163,9 @@ export default function App() {
               className="w-full text-left bg-white border-l-4 border-l-amber-500 border-y border-r border-slate-200 rounded-r-2xl rounded-l-md p-4 flex items-center justify-between hover:border-amber-400 hover:shadow-[0_8px_25px_rgba(245,158,11,0.12)] hover:bg-amber-50/5 transition-all relative cursor-pointer shadow-xs"
               id="btn-summer-readiness"
             >
-              <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 text-white flex items-center justify-center shrink-0 border border-amber-400/20 shadow-md shadow-orange-500/10">
-                  <Compass className="w-5 h-5 text-white" />
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 text-white flex items-center justify-center shrink-0 border border-white/20 shadow-[0_4px_14px_rgba(245,158,11,0.35)] ring-4 ring-amber-500/10 group-hover:scale-105 group-hover:rotate-2 group-hover:shadow-[0_6px_20px_rgba(245,158,11,0.45)] transition-all duration-300">
+                  <Compass className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex flex-col">
                   <span className="font-display font-extrabold text-sm text-[#0d1e3d] group-hover:text-amber-700 transition-colors">
@@ -177,7 +175,7 @@ export default function App() {
                 </div>
               </div>
               <div className="flex items-center gap-1.5">
-                <span className="text-[10px] font-mono text-amber-700 font-bold hidden xs:inline-flex bg-amber-50 px-2 py-0.5 rounded-sm border border-amber-250">Interactive</span>
+                <span className="text-[10px] font-mono text-amber-700 font-bold hidden xs:inline-flex bg-amber-55 px-2 py-0.5 rounded-sm border border-amber-250">Interactive</span>
                 <ChevronRight className="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 group-hover:text-amber-600 transition-all" />
               </div>
             </button>
@@ -203,9 +201,9 @@ export default function App() {
               className="w-full text-left bg-white border-l-4 border-l-cyan-500 border-y border-r border-slate-200 rounded-r-2xl rounded-l-md p-4 flex items-center justify-between hover:border-cyan-400 hover:shadow-[0_8px_25px_rgba(6,182,212,0.12)] hover:bg-cyan-50/5 transition-all cursor-pointer shadow-xs"
               id="btn-vehicle-compatibility"
             >
-              <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white flex items-center justify-center shrink-0 border border-cyan-400/20 shadow-md shadow-cyan-500/10">
-                  <Car className="w-5 h-5 text-white" />
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-500 text-white flex items-center justify-center shrink-0 border border-white/20 shadow-[0_4px_14px_rgba(6,182,212,0.35)] ring-4 ring-cyan-550/10 group-hover:scale-105 group-hover:rotate-2 group-hover:shadow-[0_6px_20px_rgba(6,182,212,0.45)] transition-all duration-300">
+                  <Car className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex flex-col">
                   <span className="font-display font-extrabold text-sm text-[#0d1e3d] group-hover:text-cyan-700 transition-colors">
@@ -215,7 +213,7 @@ export default function App() {
                 </div>
               </div>
               <div className="flex items-center gap-1.5">
-                <span className="text-[10px] font-mono text-cyan-700 font-bold hidden xs:inline-flex bg-cyan-50 px-2 py-0.5 rounded-sm border border-cyan-150">Interactive</span>
+                <span className="text-[10px] font-mono text-cyan-700 font-bold hidden xs:inline-flex bg-cyan-55 px-2 py-0.5 rounded-sm border border-cyan-150">Interactive</span>
                 <ChevronRight className="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 group-hover:text-cyan-600 transition-all" />
               </div>
             </button>
@@ -240,9 +238,9 @@ export default function App() {
               className="w-full text-left bg-white border-l-4 border-l-purple-500 border-y border-r border-slate-200 rounded-r-2xl rounded-l-md p-4 flex items-center justify-between hover:border-purple-400 hover:shadow-[0_8px_25px_rgba(168,85,247,0.12)] hover:bg-purple-50/5 transition-all cursor-pointer shadow-xs"
               id="btn-how-works"
             >
-              <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-fuchsia-600 text-white flex items-center justify-center shrink-0 border border-purple-400/20 shadow-md shadow-purple-500/10">
-                  <Milestone className="w-5 h-5 text-white" />
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-400 to-fuchsia-600 text-white flex items-center justify-center shrink-0 border border-white/20 shadow-[0_4px_14px_rgba(168,85,247,0.35)] ring-4 ring-purple-500/10 group-hover:scale-105 group-hover:rotate-2 group-hover:shadow-[0_6px_20px_rgba(168,85,247,0.45)] transition-all duration-300">
+                  <Milestone className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex flex-col">
                   <span className="font-display font-extrabold text-sm text-[#0d1e3d] group-hover:text-purple-700 transition-colors">
@@ -274,9 +272,9 @@ export default function App() {
               className="w-full text-left bg-white border-l-4 border-l-emerald-500 border-y border-r border-slate-200 rounded-r-2xl rounded-l-md p-4 flex items-center justify-between hover:border-emerald-400 hover:shadow-[0_8px_25px_rgba(16,185,129,0.12)] hover:bg-emerald-50/5 transition-all cursor-pointer shadow-xs"
               id="btn-privacy-protection"
             >
-              <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white flex items-center justify-center shrink-0 border border-emerald-400/20 shadow-md shadow-emerald-500/10">
-                  <Shield className="w-5 h-5 text-white" />
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-500 text-white flex items-center justify-center shrink-0 border border-white/20 shadow-[0_4px_14px_rgba(16,185,129,0.35)] ring-4 ring-emerald-500/10 group-hover:scale-105 group-hover:rotate-2 group-hover:shadow-[0_6px_20px_rgba(16,185,129,0.45)] transition-all duration-300">
+                  <Shield className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex flex-col">
                   <span className="font-display font-extrabold text-sm text-[#0d1e3d] group-hover:text-emerald-700 transition-colors">
@@ -308,9 +306,9 @@ export default function App() {
               className="w-full text-left bg-white border-l-4 border-l-[#0078d4] border-y border-r border-slate-200 rounded-r-2xl rounded-l-md p-4 flex items-center justify-between hover:border-blue-400 hover:shadow-[0_8px_25px_rgba(0,120,212,0.12)] hover:bg-blue-50/5 transition-all cursor-pointer shadow-xs"
               id="btn-live-updates"
             >
-              <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0078d4] to-blue-700 text-white flex items-center justify-center shrink-0 border border-blue-400/20 shadow-md shadow-blue-500/10">
-                  <Bell className="w-5 h-5 text-white" />
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#0078d4] to-blue-700 text-white flex items-center justify-center shrink-0 border border-white/20 shadow-[0_4px_14px_rgba(0,120,212,0.35)] ring-4 ring-blue-500/10 group-hover:scale-105 group-hover:rotate-2 group-hover:shadow-[0_6px_20px_rgba(0,120,212,0.45)] transition-all duration-300">
+                  <Bell className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex flex-col">
                   <span className="font-display font-extrabold text-sm text-[#0d1e3d] group-hover:text-blue-700 transition-colors">
@@ -337,103 +335,131 @@ export default function App() {
 
         </div>
 
-        {/* MINI PROCESS STRIP */}
-        <div className="bg-white border border-gray-100 rounded-2xl p-4 mt-1">
-          <h3 className="text-[10px] font-mono uppercase tracking-wider text-gray-400 mb-3 text-center">Pre-Launch Onboarding Sequence</h3>
-          <div className="grid grid-cols-3 gap-1.5 relative">
+        {/* PREMIUM PROCESS ONBOARDING SEQUENCE */}
+        <div className="bg-white border border-slate-200/90 rounded-2xl p-5 mt-2 shadow-[0_4px_20px_rgba(0,0,0,0.03)] relative overflow-hidden">
+          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#0078d4] via-cyan-400 to-emerald-500" />
+          
+          <h3 className="text-[10px] font-mono uppercase tracking-[0.15em] text-cyan-800 font-extrabold mb-5 text-center flex items-center justify-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-ping" />
+            Pre-Launch Onboarding Sequence
+          </h3>
+          
+          <div className="grid grid-cols-3 gap-2 relative">
+            {/* Visual connector line in background */}
+            <div className="absolute top-5 left-[16%] right-[16%] h-[2px] border-t-2 border-dashed border-slate-200/60 z-0" />
             
-            <div className="text-center flex flex-col items-center gap-1">
-              <div className="w-7 h-7 rounded-lg bg-cyan-50 text-cyan-700 flex items-center justify-center font-bold text-xs">
+            {/* Step 1 */}
+            <div className="text-center flex flex-col items-center gap-1.5 relative z-10 group">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0078d4] to-blue-600 text-white flex items-center justify-center font-bold text-xs shadow-md shadow-blue-500/20 ring-4 ring-blue-500/10 group-hover:scale-105 transition-all duration-300">
                 1
               </div>
-              <span className="text-[11px] font-bold text-[#0d1e3d]">Join</span>
-              <p className="text-[9px] text-gray-400 leading-normal px-1">Secure early access consideration</p>
+              <span className="text-xs font-extrabold text-[#0d1e3d] tracking-tight mt-1">Join</span>
+              <p className="text-[10px] text-gray-500 leading-normal font-medium px-1">Secure early access consideration</p>
             </div>
 
-            <div className="text-center flex flex-col items-center gap-1">
-              <div className="w-7 h-7 rounded-lg bg-cyan-50 text-cyan-700 flex items-center justify-center font-bold text-xs">
+            {/* Step 2 */}
+            <div className="text-center flex flex-col items-center gap-1.5 relative z-10 group">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 text-white flex items-center justify-center font-bold text-xs shadow-md shadow-cyan-500/20 ring-4 ring-cyan-500/10 group-hover:scale-105 transition-all duration-300">
                 2
               </div>
-              <span className="text-[11px] font-bold text-[#0d1e3d]">Check Fit</span>
-              <p className="text-[9px] text-gray-400 leading-normal px-1">Confirm your vehicle profile</p>
+              <span className="text-xs font-extrabold text-[#0d1e3d] tracking-tight mt-1">Check Fit</span>
+              <p className="text-[10px] text-gray-500 leading-normal font-medium px-1">Confirm your vehicle profile</p>
             </div>
 
-            <div className="text-center flex flex-col items-center gap-1">
-              <div className="w-7 h-7 rounded-lg bg-cyan-50 text-cyan-700 flex items-center justify-center font-bold text-xs">
+            {/* Step 3 */}
+            <div className="text-center flex flex-col items-center gap-1.5 relative z-10 group">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 text-white flex items-center justify-center font-bold text-xs shadow-md shadow-emerald-500/20 ring-4 ring-emerald-500/10 group-hover:scale-105 transition-all duration-300">
                 3
               </div>
-              <span className="text-[11px] font-bold text-[#0d1e3d]">Smarter</span>
-              <p className="text-[9px] text-gray-400 leading-normal px-1">Follow how the system evolves</p>
+              <span className="text-xs font-extrabold text-[#0d1e3d] tracking-tight mt-1">Smarter</span>
+              <p className="text-[10px] text-gray-500 leading-normal font-medium px-1">Follow system developments</p>
             </div>
 
           </div>
         </div>
 
-        {/* TRUST / PRIVACY SECTION (COMPACT CARD) */}
-        <div className="bg-[#e6f0fa]/40 border border-cyan-100/40 rounded-2xl p-5 space-y-3">
-          <div className="flex items-center gap-2">
-            <Lock className="w-4.5 h-4.5 text-cyan-600" />
-            <h3 className="font-display font-bold text-sm text-[#0d1e3d]">Privacy by design</h3>
+        {/* TRUST & PRIVACY SLATE (COMPACT HIGH-END DESIGN) */}
+        <div className="bg-[#f3f4f6] border border-slate-200/80 rounded-2xl p-6 relative overflow-hidden shadow-xs">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-cyan-400/10 to-blue-500/10 rounded-full blur-xl pointer-events-none" />
+          
+          <div className="flex items-center gap-2.5 mb-4 border-b border-slate-200/60 pb-3">
+            <div className="w-8 h-8 rounded-lg bg-[#0078d4]/10 text-[#0078d4] flex items-center justify-center shrink-0">
+              <Lock className="w-4.5 h-4.5 text-[#0078d4]" />
+            </div>
+            <div>
+              <h3 className="font-display font-extrabold text-sm text-[#0d1e3d] tracking-tight">Privacy by design</h3>
+              <p className="text-[10px] text-gray-500 font-medium font-mono uppercase tracking-wider">Astrateq Core Protocols</p>
+            </div>
           </div>
-          <ul className="space-y-2">
+          
+          <ul className="space-y-3">
             {[
-              'On-device intelligence direction',
-              'User-controlled data expectations',
-              'No unnecessary data sharing',
-              'No ad-tracking resale',
-              'Built around Canadian driver trust'
-            ].map((bullet) => (
-              <li key={bullet} className="flex items-start gap-2.5 text-xs text-gray-600">
-                <Check className="w-4 h-4 text-[#0284c7] shrink-0 mt-0.5" />
-                <span className="leading-normal">{bullet}</span>
+              { title: 'On-device intelligence direction', desc: 'Telemetry processed locally without continuous upload' },
+              { title: 'User-controlled data expectations', desc: 'You choose when and if details are indexed' },
+              { title: 'No unnecessary data sharing', desc: 'Secure standalone computing for optimal safety' },
+              { title: 'No ad-tracking resale', desc: 'Zero profile commercialization or data brokerage' },
+              { title: 'Built around Canadian driver trust', desc: 'Designed custom-tailored for regional guidelines' }
+            ].map((item, idx) => (
+              <li key={idx} className="flex items-start gap-3 text-xs text-gray-700">
+                <div className="bg-emerald-50 text-emerald-600 rounded-full p-0.5 shrink-0 mt-0.5 border border-emerald-200">
+                  <Check className="w-3.5 h-3.5 stroke-[3]" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="leading-tight font-bold text-[#0d1e3d]">{item.title}</span>
+                  <span className="text-[10px] text-gray-500 leading-normal font-medium">{item.desc}</span>
+                </div>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* PRE-LAUNCH TRANSPARENCY NOTE */}
-        <footer className="space-y-6 pt-3 text-center">
-          <div className="bg-white/60 backdrop-blur-md rounded-xl p-3 border border-gray-100 text-[10px] text-gray-400 leading-relaxed text-left space-y-1">
-            <div className="flex items-center gap-1.5 font-semibold text-gray-500 mb-1 font-display">
-              <Info className="w-3.5 h-3.5 text-cyan-600" />
+        {/* TRUSTED TRANSPARENCY NOTE */}
+        <footer className="space-y-6 pt-2 text-center">
+          <div className="bg-white border-l-4 border-l-[#0078d4] rounded-r-xl rounded-l-md p-4 text-left shadow-[0_2px_12px_rgba(0,0,0,0.015)] border border-y-slate-200/50 border-r-slate-200/50">
+            <div className="flex items-center gap-2 font-extrabold text-[#0d1e3d] mb-1.5 font-display text-xs tracking-tight">
+              <div className="w-5 h-5 rounded bg-blue-50 flex items-center justify-center">
+                <Info className="w-3.5 h-3.5 text-[#0078d4]" />
+              </div>
               <span>Pre-launch Transparency Note</span>
             </div>
-            Astrateq Gadgets is currently in pre-launch market validation. Hardware availability, compatibility, and rollout timing are subject to validation results, supplier readiness, and future manufacturing decisions.
+            <p className="text-[11px] text-gray-500 leading-relaxed font-semibold">
+              Astrateq Gadgets is currently in pre-launch market validation. Hardware availability, compatibility, and rollout timing are subject to validation results, supplier readiness, and future manufacturing decisions.
+            </p>
           </div>
 
-          {/* SOCIAL LINKS (Secondary, placed at the bottom, non-competing) */}
+          {/* SOCIAL LINKS (Microsoft High-Touch Layout) */}
           <div className="space-y-3">
             <div className="flex justify-center gap-5">
               <a
                 href={socialLinks.instagram}
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-white border border-gray-150 flex items-center justify-center text-[#0d1e3d] hover:text-cyan-600 hover:border-cyan-200 transition-colors shadow-xs"
+                className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#0d1e3d] hover:text-[#0078d4] hover:border-[#0078d4] hover:shadow-lg hover:shadow-blue-500/5 hover:-translate-y-0.5 transition-all shadow-xs"
                 title="Follow Instagram (@astrateq24)"
               >
-                <Instagram className="w-4.5 h-4.5" />
+                <Instagram className="w-5 h-5" />
               </a>
               <a
                 href={socialLinks.x}
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-white border border-gray-150 flex items-center justify-center text-[#0d1e3d] hover:text-cyan-600 hover:border-cyan-200 transition-colors shadow-xs"
+                className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#0d1e3d] hover:text-[#0078d4] hover:border-[#0078d4] hover:shadow-lg hover:shadow-blue-500/5 hover:-translate-y-0.5 transition-all shadow-xs"
                 title="Follow X / Twitter (@AstrateqIQ)"
               >
-                <Twitter className="w-4.5 h-4.5" />
+                <Twitter className="w-5 h-5" />
               </a>
               <a
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-white border border-gray-150 flex items-center justify-center text-[#0d1e3d] hover:text-cyan-600 hover:border-cyan-200 transition-colors shadow-xs"
+                className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#0d1e3d] hover:text-[#0078d4] hover:border-[#0078d4] hover:shadow-lg hover:shadow-blue-500/5 hover:-translate-y-0.5 transition-all shadow-xs"
                 title="Follow LinkedIn (company/astrateq-gadgets)"
               >
-                <Linkedin className="w-4.5 h-4.5" />
+                <Linkedin className="w-5 h-5" />
               </a>
             </div>
             
-            <p className="text-[10px] text-gray-400 font-mono tracking-wider">
+            <p className="text-[10px] text-gray-400 font-mono tracking-wider font-semibold">
               &copy; {new Date().getFullYear()} Astrateq Gadgets. All rights reserved.
             </p>
           </div>
