@@ -75,26 +75,26 @@ export default function App() {
           <motion.div 
             whileHover={{ scale: 1.06 }}
             whileTap={{ scale: 0.97 }}
-            className="group relative cursor-pointer inline-flex items-center gap-2.5 bg-neutral-950 border border-white/15 px-4 py-2 rounded-full overflow-hidden shadow-[0_0_15px_rgba(255,0,127,0.2)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,245,212,0.55)] hover:border-[#00f5d4]/40"
+            className="group relative cursor-pointer inline-flex items-center gap-2.5 bg-gradient-to-r from-[#ff4b00] via-[#ff6a00] to-[#ff9100] border-2 border-white/65 px-4.5 py-2 rounded-full overflow-hidden shadow-[0_0_20px_rgba(255,75,0,0.45)] hover:shadow-[0_0_38px_rgba(255,106,0,0.8)] transition-all duration-300"
           >
             {/* Glowing marquee underlight */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#ff007f] via-[#00f5d4] to-[#ffb700] opacity-25 group-hover:opacity-50 transition-opacity duration-300 blur-[3px]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-300 blur-[2px]" />
             
             {/* Light sweep indicator line */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/35 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/45 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
 
             <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff007f] opacity-80"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00f5d4]"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-80"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white shadow-[0_0_8px_rgba(255,255,255,0.9)]"></span>
             </span>
             
-            <span className="relative text-[10px] md:text-xs font-mono font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#00f5d4] via-white to-[#ffb700] uppercase drop-shadow-[0_0_6px_rgba(0,245,212,0.4)] group-hover:scale-[1.01] transition-transform">
+            <span className="relative text-[10.5px] md:text-[11.5px] font-sans font-black tracking-widest text-white uppercase drop-shadow-[0_2px_5px_rgba(0,0,0,0.35)] group-hover:scale-[1.01] transition-transform">
               Canada Driver Pilot Program
             </span>
             
-            <span className="text-white/30 text-[10px] select-none">•</span>
+            <span className="text-white/50 text-[10px] select-none font-bold">•</span>
             
-            <span className="relative px-2 py-0.5 rounded bg-[#ff007f]/20 border border-[#ff007f]/40 text-[9px] font-mono font-black text-[#ff007f] uppercase tracking-wider animate-pulse shadow-[0_0_8px_rgba(255,0,127,0.3)]">
+            <span className="relative px-2.5 py-0.5 rounded bg-black/35 border border-white/30 text-[9px] font-mono font-black text-white uppercase tracking-widest animate-pulse shadow-[0_0_10px_rgba(255,255,255,0.15)]">
               ACTIVE LIVE
             </span>
           </motion.div>
