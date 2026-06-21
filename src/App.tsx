@@ -93,9 +93,13 @@ export default function App() {
             <span className="text-[10px] font-bold text-[#0066b2] tracking-[0.08em] uppercase font-mono">Summer 2026 Trial Phase</span>
           </div>
 
-          <p className="text-[10px] font-semibold font-mono text-slate-400 tracking-[0.2em] uppercase mt-0.5">
-            Drive Safer. Drive Smarter.
-          </p>
+          <div className="flex items-center gap-4 mt-1">
+            <div className="h-[1px] w-12 bg-gradient-to-r from-transparent via-slate-200 to-slate-400/50" />
+            <p className="text-[11px] font-display font-medium text-slate-500/90 tracking-[0.25em] uppercase transition-all duration-500 hover:text-[#0078d4] hover:tracking-[0.28em] select-none">
+              Drive Safer <span className="text-[#0078d4] font-sans mx-1 opacity-80 animate-pulse">•</span> Drive Smarter
+            </p>
+            <div className="h-[1px] w-12 bg-gradient-to-l from-transparent via-slate-200 to-slate-400/50" />
+          </div>
         </header>
 
         {/* HERO SECTION (Porsche dynamic layout) */}
