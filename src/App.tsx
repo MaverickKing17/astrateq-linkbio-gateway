@@ -145,7 +145,7 @@ export default function App() {
               The privacy-first <span className="bg-gradient-to-r from-[#00f5d4] via-emerald-400 to-[#ffb700] bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(0,245,212,0.3)] animate-pulse">smart assistant</span> that plugs into your car.
             </h1>
             <p className="text-[14px] md:text-[15px] text-slate-200 leading-relaxed font-sans font-medium tracking-tight">
-              Get diagnostic insights, safety metrics, and trip summaries completely offline. Join our pilot driver program to receive your free hardware, verify compatibility, or take the short readiness quiz today.
+              Get diagnostic insights, safety metrics, and trip summaries completely offline. Join our pilot driver program to verify compatibility, reserve a priority waitlist slot, or take the short readiness quiz today.
             </p>
           </div>
 
@@ -200,10 +200,10 @@ export default function App() {
                   <span>⚡</span> LIMITED SPACE <span>⚡</span>
                 </span>
                 <span className="text-sm md:text-base font-sans font-black text-white tracking-wide uppercase">
-                  Reserve Your Free Hardware Adapter
+                  Reserve Pre-Launch Priority Slot
                 </span>
                 <p className="text-[11px] md:text-xs text-slate-300 font-sans font-medium mt-1 leading-normal max-w-md mx-auto">
-                  Apply to join our pre-launch pilot. Selected drivers receive the upcoming physical plug-and-play adapter and lifetime diagnostic software 100% free of charge.
+                  Apply to join our pre-launch pilot. Selected drivers receive priority waitlist status for upcoming hardware and lifetime diagnostic software access 100% free of charge.
                 </p>
               </span>
             </div>
